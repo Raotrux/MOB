@@ -21,15 +21,17 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <Label Text="Pulling from a local file" />
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
                     <Image Source="humanfirst.png" VerticalOptions="Center" HeightRequest="100" />
                 </ContentView>
             </StackLayout>
         </StackLayout>
         <StackLayout Grid.Row="1" BackgroundColor="Green" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                <Image Source="https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_1280.jpg" VerticalOptions="Center" HeightRequest="100" />
+            <Label Text="Pulling from a website" />
+            <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
+                <Image Source="https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_1280.jpg" VerticalOptions="Center" WidthRequest="220" />
             </ContentView>
         </StackLayout>
         <ScrollView Grid.Row="2">
