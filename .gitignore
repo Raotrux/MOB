@@ -193,3 +193,4 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 .vscode/settings.json
+.vs/MobTestApp/v16/.suo
