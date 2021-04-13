@@ -2,7 +2,6 @@ C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\bin\Debug\netstanda
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\bin\Debug\netstandard2.0\MobTestApp.dll
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\bin\Debug\netstandard2.0\ref\MobTestApp.dll
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\bin\Debug\netstandard2.0\MobTestApp.pdb
-C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\MobTestApp.csprojAssemblyReference.cache
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs

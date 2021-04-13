@@ -493,3 +493,4 @@ C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\9
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\90\res\drawable\humanfirst.png
