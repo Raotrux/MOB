@@ -981,24 +981,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\raotr\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\jeric\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raotr\\source\\repos\\MobTestApp\\MobTestApp\\MobTestApp.iOS\\MobTestApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\jeric\\source\\repos\\school\\MOB\\MobTestApp\\MobTestApp.iOS\\MobTestApp.iOS.csproj",
       "projectName": "MobTestApp.iOS",
-      "projectPath": "C:\\Users\\raotr\\source\\repos\\MobTestApp\\MobTestApp\\MobTestApp.iOS\\MobTestApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\raotr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raotr\\source\\repos\\MobTestApp\\MobTestApp\\MobTestApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\jeric\\source\\repos\\school\\MOB\\MobTestApp\\MobTestApp.iOS\\MobTestApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\jeric\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jeric\\source\\repos\\school\\MOB\\MobTestApp\\MobTestApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\raotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jeric\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1012,8 +1012,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\raotr\\source\\repos\\MobTestApp\\MobTestApp\\MobTestApp\\MobTestApp.csproj": {
-              "projectPath": "C:\\Users\\raotr\\source\\repos\\MobTestApp\\MobTestApp\\MobTestApp\\MobTestApp.csproj"
+            "C:\\Users\\jeric\\source\\repos\\school\\MOB\\MobTestApp\\MobTestApp\\MobTestApp.csproj": {
+              "projectPath": "C:\\Users\\jeric\\source\\repos\\school\\MOB\\MobTestApp\\MobTestApp\\MobTestApp.csproj"
             }
           }
         }
