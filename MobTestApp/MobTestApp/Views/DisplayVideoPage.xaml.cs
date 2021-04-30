@@ -14,14 +14,8 @@ namespace MobTestApp.Views
     {
         public DisplayVideoPage()
         {
+            Device.SetFlags(new string[] { "MediaElement_Experimental" });
             InitializeComponent();
-            webview.Source = "https://www.youtube.com/watch?v=hY7m5jjJ9mM";
-            //var localhtml = new HtmlWebViewSource();
-            //localhtml.Html = @"<html><body>
-            //                        <h1>Xamarin Webview</h1>
-            //                        <p>This is a test of the webviewsource</p>
-            //                </body></html>";
-            //webview.Source = localhtml;
         }
     }
 }

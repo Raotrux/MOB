@@ -139,17 +139,17 @@ public final class R {
 		public static final int notification_template_part_time = 0x7f0b003e;
 	}
 	public static final class string {
-		public static final int status_bar_notification_info_overflow = 0x7f0d0036;
+		public static final int status_bar_notification_info_overflow = 0x7f0e0036;
 	}
 	public static final class style {
-		public static final int TextAppearance_Compat_Notification = 0x7f0e0117;
-		public static final int TextAppearance_Compat_Notification_Info = 0x7f0e0118;
-		public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0e011a;
-		public static final int TextAppearance_Compat_Notification_Time = 0x7f0e011d;
-		public static final int TextAppearance_Compat_Notification_Title = 0x7f0e011f;
-		public static final int Widget_Compat_NotificationActionContainer = 0x7f0e01c6;
-		public static final int Widget_Compat_NotificationActionText = 0x7f0e01c7;
-		public static final int Widget_Support_CoordinatorLayout = 0x7f0e01f6;
+		public static final int TextAppearance_Compat_Notification = 0x7f0f0117;
+		public static final int TextAppearance_Compat_Notification_Info = 0x7f0f0118;
+		public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0f011a;
+		public static final int TextAppearance_Compat_Notification_Time = 0x7f0f011d;
+		public static final int TextAppearance_Compat_Notification_Title = 0x7f0f011f;
+		public static final int Widget_Compat_NotificationActionContainer = 0x7f0f01c6;
+		public static final int Widget_Compat_NotificationActionText = 0x7f0f01c7;
+		public static final int Widget_Support_CoordinatorLayout = 0x7f0f01f6;
 	}
 	public static final class styleable {
 		public static final int[] ColorStateListItem = new int[] { 0x010101a5, 0x0101031f, 0x7f030027 };
