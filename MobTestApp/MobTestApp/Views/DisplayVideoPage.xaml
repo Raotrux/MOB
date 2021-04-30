@@ -9,19 +9,22 @@
         <vm:DisplayVideoViewModel />
     </ContentPage.BindingContext>
 
+    
+        
     <Grid Margin="0">
         <Grid.RowDefinitions>
+            <RowDefinition Height="234" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <!-- Set ShowPlaybackControls="False" and use the Play(), Pause() and Stop() methods to control playback with your own buttons. -->
-        <BoxView Color="#4d4d4d" Grid.Column="0" Grid.RowSpan="3"/>
         
-        <MediaElement Source="https://sec.ch9.ms/ecn/ch9/wp7.mp4" ShowsPlaybackControls="True" AutoPlay="False" />
+        <BoxView Color="#b3b3b3" Grid.Column="0" Grid.RowSpan="2"/>
+            
+        <!-- Set ShowPlaybackControls="False" and use the Play(), Pause() and Stop() methods to control playback with your own buttons. -->
+            <MediaElement Source="https://sec.ch9.ms/ecn/ch9/wp7.mp4" ShowsPlaybackControls="True" AutoPlay="False" />
 
-        <ScrollView Grid.Row="2">
-            <StackLayout Orientation="Vertical" BackgroundColor="#f2be1a" Padding="30,24,30,24" Spacing="10">
+        <ScrollView Grid.Row="1">
+            <StackLayout  Orientation="Vertical" BackgroundColor="#efd792" Padding="30,24,30,24" Spacing="10">
 
                 <Label Text="Moving those legs" FontSize="Title" FontAttributes="Bold" />
                 <Label Text="This area would maybe give a overall description of what this exercise is. It could also have information about what muscles are being targeted or what ever other information we'd want." FontSize="16" Padding="0,0,0,0"/>
@@ -30,7 +33,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Step 1: " FontAttributes="Italic"/>
+                                <Span Text="Step 1: " FontAttributes="Italic" />
                                 <Span Text="Do a warm-up run." FontAttributes="Bold"/>
                             </FormattedString.Spans>
                         </FormattedString>
@@ -76,5 +79,6 @@
             </StackLayout>
         </ScrollView>
     </Grid>
+    
 
 </ContentPage>
