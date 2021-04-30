@@ -26,9 +26,12 @@
         <ScrollView Grid.Row="1">
             <StackLayout  Orientation="Vertical" BackgroundColor="#efd792" Padding="30,24,30,24" Spacing="10">
 
-                <Label Text="Moving those legs" FontSize="Title" FontAttributes="Bold" />
+                <Label Text="Exercise: Moving those legs" FontSize="Title" FontAttributes="Bold" />
                 <Label Text="This area would maybe give a overall description of what this exercise is. It could also have information about what muscles are being targeted or what ever other information we'd want." FontSize="16" Padding="0,0,0,0"/>
 
+                <Image Source="https://www.nrgfitness.ie/site/wp-content/uploads/Best-Exercises-for-each-muscle-group.jpg" VerticalOptions="Center" HeightRequest="200" />
+
+                <Label Text="Step-by-step Instructions:" FontSize="Title" FontAttributes="Bold" />
                 <Label FontSize="16" Padding="0,24,0,0">
                     <Label.FormattedText>
                         <FormattedString>
@@ -39,7 +42,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                
+
                 <Label Text="First your warm-up excercises, you're going to go outside and just start running in a single direction for a good bit." FontSize="16" Padding="0,0,0,0"/>
                 <Label FontSize="16" Padding="0,24,0,0">
                     <Label.FormattedText>
@@ -51,7 +54,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                
+
                 <Label Text="Now that you've been running for however long, it's time to figure out things out. Find an available clearing free of any hazards. Think about your situation - are you wanting a general excercise? Are you trying to relieve pain in a certain location? Are you so old you cant get up and this is a last resort for some blood flow?" FontSize="16" Padding="0,0,0,0"/>
                 <Label FontSize="16" Padding="0,24,0,0">
                     <Label.FormattedText>
@@ -64,7 +67,7 @@
                     </Label.FormattedText>
                 </Label>
                 <Label Text="Now fix that problem - go find a playlist that suits your needs. You can choose from playlists created by the experts, or maybe member-created playlists that the community shares with each other." FontSize="16" Padding="0,0,0,0"/>
-                
+
                 <Label FontSize="16" Padding="0,24,0,0">
                     <Label.FormattedText>
                         <FormattedString>
@@ -76,6 +79,7 @@
                     </Label.FormattedText>
                 </Label>
                 <Label Text="If you've been following these instructions - it's time to figure out where you are. It should be straight-forward on where you need to go now, considering you've been traveling a straight path." FontSize="16" Padding="0,0,0,0"/>
+                
             </StackLayout>
         </ScrollView>
     </Grid>
