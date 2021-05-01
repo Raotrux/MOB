@@ -495,3 +495,4 @@ C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\9
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\90\res\drawable\humanfirst.png
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\90\res\raw\embeddedcountdownvideo.mp4
+C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp.Android\obj\Debug\90\res\drawable\mob_logo_2021_test3.png
