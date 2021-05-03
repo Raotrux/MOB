@@ -17,14 +17,14 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        
-        <BoxView Color="#b3b3b3" Grid.Column="0" Grid.RowSpan="2"/>
+
+        <BoxView Color="#4d4d4d" Grid.Column="0" Grid.RowSpan="2"/>
             
         <!-- Set ShowPlaybackControls="False" and use the Play(), Pause() and Stop() methods to control playback with your own buttons. -->
             <MediaElement Source="https://sec.ch9.ms/ecn/ch9/wp7.mp4" ShowsPlaybackControls="True" AutoPlay="False" />
 
         <ScrollView Grid.Row="1">
-            <StackLayout  Orientation="Vertical" BackgroundColor="#efd792" Padding="30,24,30,24" Spacing="10">
+            <StackLayout  Orientation="Vertical" BackgroundColor="#e6e6e6" Padding="30,24,30,24" Spacing="10">
 
                 <Label Text="Exercise: Moving those legs" FontSize="Title" FontAttributes="Bold" />
                 <Label Text="This area would maybe give a overall description of what this exercise is. It could also have information about what muscles are being targeted or what ever other information we'd want." FontSize="16" Padding="0,0,0,0"/>
