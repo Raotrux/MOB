@@ -17,7 +17,7 @@
         <Image Source="MOB_Logo_2021_Test3.png" VerticalOptions="Start" HeightRequest="400" />
     
         <StackLayout Grid.Row="1" Padding="110,0,110,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" BackgroundColor="#b3b3b3"/>
         </StackLayout>
         <StackLayout Grid.Row="2" Padding="10,0,10,0" VerticalOptions="Center">
             <Image Source="https://i.stack.imgur.com/VHSZf.png" VerticalOptions="Start" HeightRequest="100" />

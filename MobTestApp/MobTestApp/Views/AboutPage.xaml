@@ -38,11 +38,11 @@
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
-            <Button Margin="100,0,100,0" Text="My Mōb"
+            <Button Margin="100,0,100,0" Text="3min Mōb"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
-            <Button Margin="100,0,100,0" Text="Mōb Market"
+            <Button Margin="100,0,100,0" Text="My Mōb"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />

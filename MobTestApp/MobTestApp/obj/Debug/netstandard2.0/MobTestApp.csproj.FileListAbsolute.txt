@@ -18,3 +18,9 @@ C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstanda
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\MobTestApp.pdb
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\DisplayVideoPage.xaml.g.cs
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\MobTestApp.csprojAssemblyReference.cache
+C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\DailyDosePage.xaml.g.cs
+C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\MobMarketPage.xaml.g.cs
+C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\MyMobPage.xaml.g.cs
+C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
+C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\ThreeMinMobPage.xaml.g.cs
