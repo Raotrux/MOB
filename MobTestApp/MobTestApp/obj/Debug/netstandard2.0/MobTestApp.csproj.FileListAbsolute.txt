@@ -24,3 +24,4 @@ C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstanda
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
 C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\ThreeMinMobPage.xaml.g.cs
+C:\Users\raotr\source\repos\MobTestApp\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
