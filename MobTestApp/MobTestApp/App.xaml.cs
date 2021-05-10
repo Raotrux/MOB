@@ -23,7 +23,6 @@ namespace MobTestApp
         protected override void OnStart()
         {
             AppCenter.Start("android=991bfd55-99aa-4f99-8e01-13fd0ed162df;" +
-                  "uwp={Your UWP App secret here};" +
                   "ios=867a125f-ced1-4a38-9442-2144f681635d;",
                   typeof(Analytics), typeof(Crashes));
         }
