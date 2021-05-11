@@ -13,6 +13,13 @@ namespace MobTestApp
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
+            Routing.RegisterRoute(nameof(DailyDosePage), typeof(DailyDosePage));
+            Routing.RegisterRoute(nameof(ThreeMinMobPage), typeof(ThreeMinMobPage));
+            Routing.RegisterRoute(nameof(MobMarketPage), typeof(MobMarketPage));
+            Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
+            Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+            Routing.RegisterRoute(nameof(TemplateVideoPage), typeof(TemplateVideoPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

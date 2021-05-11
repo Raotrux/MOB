@@ -85,8 +85,8 @@
     <FlyoutItem Title="Browse" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="DisplayVideoPage - WIP" Icon="icon_feed.png">
-        <ShellContent Route="DisplayVideoPage" ContentTemplate="{DataTemplate local:DisplayVideoPage}" />
+    <FlyoutItem Title="TemplateVideoPage - WIP" Icon="icon_feed.png">
+        <ShellContent Route="TemplateVideoPage" ContentTemplate="{DataTemplate local:TemplateVideoPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Daily Dose - WIP" Icon="MOB_Logo_2021_Test3.png">
         <ShellContent Route="DailyDosePage" ContentTemplate="{DataTemplate local:DailyDosePage}" />

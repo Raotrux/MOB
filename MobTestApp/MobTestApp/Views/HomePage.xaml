@@ -34,28 +34,31 @@
             </StackLayout>
         </StackLayout>
         <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-            <Button Margin="100,0,100,0" Text="Daily Dose"
-                        Command="{Binding OpenWebCommand}"
+            <Button     Margin="100,0,100,0" 
+                        Text="Daily Dose"
                         BackgroundColor="black"
-                        TextColor="White" />
-            <Button Margin="100,0,100,0" Text="3min Mōb"
-                        Command="{Binding OpenWebCommand}"
+                        TextColor="White" 
+                        Clicked="DailyDose_Clicked"/>
+            <Button     Margin="100,0,100,0" 
+                        Text="3min Mōb"
+                        Clicked="ThreeMinMob_Clicked"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
-            <Button Margin="100,0,100,0" Text="My Mōb"
-                        Command="{Binding OpenWebCommand}"
+            <Button     Margin="100,0,100,0" 
+                        Text="My Mōb"
+                        Clicked="MyMob_Clicked"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
         </StackLayout>
         <StackLayout Grid.Row="2" Orientation="Horizontal" Padding="30,0,30,24" Spacing="10">
             <Button Margin="30,0,30,0" Text="Settings"
-                        Command="{Binding OpenWebCommand}"
+                        Clicked="Settings_Clicked"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
         </StackLayout>
         <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Padding="30,0,30,24" Spacing="10">
             <Button Margin="30,0,30,0" Text="Profile"
-                        Command="{Binding OpenWebCommand}"
+                        Clicked="Profile_Clicked"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
         </StackLayout>
