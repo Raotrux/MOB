@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobTestApp.Android", "MobTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobTestApp.iOS", "MobTestApp\MobTestApp.iOS\MobTestApp.iOS.csproj", "{5D9404CD-1975-41CF-BEBC-E83ADD51F08C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobTestApp", "MobTestApp\MobTestApp\MobTestApp.csproj", "{970C58E4-4D49-4984-A76E-6499B6DF6D90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobTestApp", "MobTestApp\MobTestApp\MobTestApp.csproj", "{970C58E4-4D49-4984-A76E-6499B6DF6D90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
