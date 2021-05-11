@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BEI5U1RXi7nHnxwnufuf9n9Xzu/B6t0fxxgXhUl/A+zwGT9rmQRkkC+OD7bGAJa6O/pClxjYxi1NjQ3i2JtoBg==",
+  "dgSpecHash": "XRVNVa2Fzu5jh/1V0m+gZjx6bK7gyZJhY3hD+88XWdihszMJ49oFNCbnIvfAKkFcTlrH0xuYG4XVBXIFnbHspA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jeric\\source\\repos\\school\\MOB\\MobTestApp\\MobTestApp.Android\\MobTestApp.Android.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.versionedparcelable\\1.1.1.6\\xamarin.androidx.versionedparcelable.1.1.1.6.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.viewpager\\1.0.0.6\\xamarin.androidx.viewpager.1.0.0.6.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.viewpager2\\1.0.0.8\\xamarin.androidx.viewpager2.1.0.0.8.nupkg.sha512",
+    "C:\\Users\\jeric\\.nuget\\packages\\xamarin.communitytoolkit\\1.1.0\\xamarin.communitytoolkit.1.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.android.material\\1.2.1.1\\xamarin.google.android.material.1.2.1.1.nupkg.sha512",

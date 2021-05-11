@@ -32,3 +32,9 @@ C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\obj\Debug\netstanda
 C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\MobTestApp.dll
 C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\ref\MobTestApp.dll
 C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\MobTestApp.pdb
+C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\MobTestApp.csprojAssemblyReference.cache
+C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\bin\Debug\netstandard2.0\MobTestApp.deps.json
+C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\bin\Debug\netstandard2.0\MobTestApp.dll
+C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\bin\Debug\netstandard2.0\ref\MobTestApp.dll
+C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\bin\Debug\netstandard2.0\MobTestApp.pdb
+C:\Users\jeric\source\repos\school\MOB\MobTestApp\MobTestApp\obj\Debug\netstandard2.0\XamlC.stamp
