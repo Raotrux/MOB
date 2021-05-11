@@ -16,7 +16,6 @@ namespace MobTestApp.Views
         public TemplateVideoPage()
         {
             Device.SetFlags(new string[] { "MediaElement_Experimental" });
-            InitializeComponent();
         }
     }
 }
