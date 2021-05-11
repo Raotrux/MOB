@@ -20,13 +20,20 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <Label Text="Pulling from a local file" />
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
                     <Image Source="humanfirst.png" VerticalOptions="Center" HeightRequest="100" />
                 </ContentView>
             </StackLayout>
         </StackLayout>
-        <ScrollView Grid.Row="1">
+        <StackLayout Grid.Row="1" BackgroundColor="Green" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <Label Text="Pulling from a website" />
+            <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
+                <Image Source="https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_1280.jpg" VerticalOptions="Center" WidthRequest="220" />
+            </ContentView>
+        </StackLayout>
+        <ScrollView Grid.Row="2">
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Label Text="Start developing now" FontSize="Title"/>
                 <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>

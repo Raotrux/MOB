@@ -6,14 +6,14 @@
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
-    
+    {StaticResource Primary}
         https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
     -->
 
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.BackgroundColor" Value="#b3b3b3" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
@@ -78,11 +78,32 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
-    <FlyoutItem Title="About" Icon="icon_about.png">
-        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+    <FlyoutItem Title="Home Page - WIP" Icon="icon_about.png">
+        <ShellContent Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
     </FlyoutItem>
     <FlyoutItem Title="Browse" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="TemplateVideoPage - WIP" Icon="icon_feed.png">
+        <ShellContent Route="TemplateVideoPage" ContentTemplate="{DataTemplate local:TemplateVideoPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Daily Dose - WIP" Icon="MOB_Logo_2021_Test3.png">
+        <ShellContent Route="DailyDosePage" ContentTemplate="{DataTemplate local:DailyDosePage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="3min Mōb - WIP" Icon="MOB_Logo_2021_Test3.png">
+        <ShellContent Route="ThreeMinMobPage" ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="My Mōb - WIP" Icon="MOB_Logo_2021_Test3.png">
+        <ShellContent Route="MyMobPage" ContentTemplate="{DataTemplate local:MyMobPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Mob Market - WIP" Icon="MOB_Logo_2021_Test3.png">
+        <ShellContent Route="MobMarketPage" ContentTemplate="{DataTemplate local:MobMarketPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Settings - WIP" Icon="MOB_Logo_2021_Test3.png">
+        <ShellContent Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Profile - WIP" Icon="MOB_Logo_2021_Test3.png">
+        <ShellContent Route="ProfilePage" ContentTemplate="{DataTemplate local:ProfilePage}" />
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

@@ -97,6 +97,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\humanfirst.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\embeddedCountdownVideo.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MOB_Logo_2021_Test3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

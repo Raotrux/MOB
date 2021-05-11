@@ -5,11 +5,11 @@ using Xamarin.Forms;
 
 namespace MobTestApp.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public class MyMobViewModel : BaseViewModel
     {
-        public AboutViewModel()
+        public MyMobViewModel()
         {
-            Title = "About Page";
+            Title = "My Mob";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.github.com"));
 
         }
