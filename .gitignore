@@ -377,3 +377,4 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,xamarinstudio
 MobTestApp/MobTestApp.Android/obj/*
 MobTestApp/MobTestApp.Android/bin/*
+.vs/MobTestApp/v16/.suo
