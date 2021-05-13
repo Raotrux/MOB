@@ -16,5 +16,15 @@ namespace MobTestApp.Views
         {
             InitializeComponent();
         }
+
+        private async void Settings1_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("Settings1");
+        }
+
+        private async void Settings2_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("Settings2");
+        }
     }
 }

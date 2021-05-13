@@ -18,8 +18,13 @@ namespace MobTestApp
             Routing.RegisterRoute(nameof(ThreeMinMobPage), typeof(ThreeMinMobPage));
             Routing.RegisterRoute(nameof(MobMarketPage), typeof(MobMarketPage));
             Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
+
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+            Routing.RegisterRoute(nameof(Settings1), typeof(Settings1));
+            Routing.RegisterRoute(nameof(Settings2), typeof(Settings2));
+
             Routing.RegisterRoute(nameof(TemplateVideoPage), typeof(TemplateVideoPage));
+            Routing.RegisterRoute(nameof(MyMobPage), typeof(MyMobPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
