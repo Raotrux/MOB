@@ -9,7 +9,7 @@ namespace MobTestApp.ViewModels
     {
         public Settings1ViewModel()
         {
-            Title = "Home Page";
+            Title = "Settings 1";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.github.com"));
 
         }

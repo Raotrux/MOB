@@ -36,7 +36,7 @@
         <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
             <Button     Margin="100,0,100,0" 
                         Text="Daily Dose"
-                        BackgroundColor="black"
+                        BackgroundColor="#b3b3b3"
                         TextColor="White" 
                         Clicked="DailyDose_Clicked"/>
             <Button     Margin="100,0,100,0" 

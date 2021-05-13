@@ -13,7 +13,7 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="#b3b3b3" />
+                <Setter Property="Shell.BackgroundColor" Value="#4d4d4d" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
@@ -40,13 +40,16 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="White" />
-                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                    <!-- This color changes the background of buttons in the tab menu-->
+                                    <Setter Property="BackgroundColor" Value="white" />
+                                    <!-- This color changes the background of the text in the tab menu-->
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="#4d4d4d" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Selected">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <!-- This color changes the background of buttons that is selected in the tab menu-->
+                                    <Setter Property="BackgroundColor" Value="#b3b3b3" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -63,7 +66,8 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                    <!-- This color changes the background of the Logout button in the tab menu-->
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="white" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
