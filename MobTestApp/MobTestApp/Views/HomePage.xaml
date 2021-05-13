@@ -19,7 +19,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -49,16 +48,8 @@
                         Clicked="MyMob_Clicked"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
-        </StackLayout>
-        <StackLayout Grid.Row="2" Orientation="Horizontal" Padding="30,0,30,24" Spacing="10">
-            <Button Margin="30,0,30,0" Text="Settings"
+            <Button     Margin="100,0,100,0" Text="Settings"
                         Clicked="Settings_Clicked"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" />
-        </StackLayout>
-        <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Padding="30,0,30,24" Spacing="10">
-            <Button Margin="30,0,30,0" Text="Profile"
-                        Clicked="Profile_Clicked"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
         </StackLayout>
