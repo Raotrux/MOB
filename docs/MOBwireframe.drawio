@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-13T19:58:43.306Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.56" etag="SHnj6wSe-uAn1kqDw_Po" version="14.6.13" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-05-13T20:04:03.372Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.56" etag="UVqZPPJvp8OHmHWqs1UT" version="14.6.13" type="github" pages="2">
   <diagram name="Basic Page Navigation" id="f1b7ffb7-ca1e-a977-7cf5-a751b3c06c05">
     <mxGraphModel dx="2062" dy="1128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
@@ -193,18 +193,36 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MEHkFoTcwWCktgnyYxfE" name="System Overview">
-    <mxGraphModel dx="2062" dy="1128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1718" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="GRWkLcvEEpDLoTOGf-wi-0" />
         <mxCell id="GRWkLcvEEpDLoTOGf-wi-1" parent="GRWkLcvEEpDLoTOGf-wi-0" />
-        <mxCell id="GRWkLcvEEpDLoTOGf-wi-2" value="Youtube" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-1">
-          <mxGeometry x="950" y="70" width="120" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="GRWkLcvEEpDLoTOGf-wi-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-1">
           <mxGeometry x="40" y="40" width="320" height="760" as="geometry" />
         </mxCell>
-        <mxCell id="GRWkLcvEEpDLoTOGf-wi-7" value="" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.android_phone" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-1">
-          <mxGeometry x="700" y="500" width="30" height="50" as="geometry" />
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-17" value="" style="group" vertex="1" connectable="0" parent="GRWkLcvEEpDLoTOGf-wi-1">
+          <mxGeometry x="950" y="500" width="105" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-12" value="" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.mobile" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-17">
+          <mxGeometry width="104.99844446748936" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-16" value="" style="group" vertex="1" connectable="0" parent="GRWkLcvEEpDLoTOGf-wi-17">
+          <mxGeometry x="15.555555555555555" y="56.66804936223168" width="85.55555555555556" height="38.8883127657368" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-14" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.apple;fillColor=#1B1C1C;strokeColor=none" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-16">
+          <mxGeometry y="0.4617987140931193" width="36.66666666666667" height="37.96471533755058" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-15" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/social-glyph/30/android-120.png" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-16">
+          <mxGeometry x="36.66666666666667" width="38.88831276573683" height="38.88831276573683" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-21" value="" style="group" vertex="1" connectable="0" parent="GRWkLcvEEpDLoTOGf-wi-1">
+          <mxGeometry x="790" y="50" width="280" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-20" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-21">
+          <mxGeometry width="280" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-19" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.youtube;fillColor=#FF2626;gradientColor=#B5171F" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-21">
+          <mxGeometry x="70" y="70" width="157.20000000000002" height="65.8" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
