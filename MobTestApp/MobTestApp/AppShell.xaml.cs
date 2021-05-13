@@ -20,13 +20,14 @@ namespace MobTestApp
             Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
             Routing.RegisterRoute(nameof(DailyDosePage), typeof(DailyDosePage));
             Routing.RegisterRoute(nameof(ThreeMinMobPage), typeof(ThreeMinMobPage));
-            Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
             Routing.RegisterRoute(nameof(MyMobPage), typeof(MyMobPage));
 
             //Buttons inside Settings Page
-            Routing.RegisterRoute(nameof(Settings1), typeof(Settings1));
-            Routing.RegisterRoute(nameof(Settings2), typeof(Settings2));
+            Routing.RegisterRoute(nameof(ApplicationPage), typeof(ApplicationPage));
+            Routing.RegisterRoute(nameof(BillingPage), typeof(BillingPage));
+            Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
+            Routing.RegisterRoute(nameof(PremiumPage), typeof(PremiumPage));
 
             //Buttons inside the My Mob Page
             Routing.RegisterRoute(nameof(MobMarketPage), typeof(MobMarketPage));

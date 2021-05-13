@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MobTestApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Settings2 : ContentPage
+    public partial class ApplicationPage : ContentPage
     {
-        public Settings2()
+        public ApplicationPage()
         {
             InitializeComponent();
         }

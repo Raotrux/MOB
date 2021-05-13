@@ -17,14 +17,22 @@ namespace MobTestApp.Views
             InitializeComponent();
         }
 
-        private async void Settings1_Clicked(object sender, EventArgs e)
+        private async void ApplicationPage_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("Settings1");
+            await Shell.Current.GoToAsync("ApplicationPage");
         }
 
-        private async void Settings2_Clicked(object sender, EventArgs e)
+        private async void ProfilePage_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("Settings2");
+            await Shell.Current.GoToAsync("ProfilePage");
+        }
+        private async void BillingPage_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("BillingPage");
+        }
+        private async void PremiumPage_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("PremiumPage");
         }
     }
 }

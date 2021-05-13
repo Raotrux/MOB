@@ -35,13 +35,23 @@
             </StackLayout>
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Button     Margin="100,0,100,0" 
-                        Text="Settings1"
-                        BackgroundColor="black"
+                        Text="Application"
+                        BackgroundColor="#b3b3b3"
                         TextColor="White" 
-                        Clicked="Settings1_Clicked"/>
+                        Clicked="ApplicationPage_Clicked"/>
                 <Button     Margin="100,0,100,0" 
-                        Text="Settings2"
-                        Clicked="Settings2_Clicked"
+                        Text="Profile"
+                        Clicked="ProfilePage_Clicked"
+                        BackgroundColor="#b3b3b3"
+                        TextColor="White" />
+                <Button     Margin="100,0,100,0" 
+                        Text="Billing"
+                        Clicked="BillingPage_Clicked"
+                        BackgroundColor="#b3b3b3"
+                        TextColor="White" />
+                <Button     Margin="100,0,100,0" 
+                        Text="Premium"
+                        Clicked="PremiumPage_Clicked"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
             </StackLayout>

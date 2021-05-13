@@ -1,20 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobTestApp.Views.MyMobPage"
+             x:Class="MobTestApp.Views.BillingPage"
              xmlns:vm="clr-namespace:MobTestApp.ViewModels"
              Title="{Binding Title}">
-
-    <ContentPage.BindingContext>
-        <vm:MyMobViewModel />
-    </ContentPage.BindingContext>
-
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
+ 
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -34,18 +24,8 @@
                 </StackLayout>
             </StackLayout>
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Button     Margin="100,0,100,0" 
-                        Text="Mōb Marketplace"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" 
-                        Clicked="MobMarket_Clicked"/>
-                <Button     Margin="100,0,100,0" 
-                        Text="Mōb Playlist"
-                        Clicked="MobPlaylist_Clicked"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" />
+
             </StackLayout>
-            
         </Grid>
     </ContentPage.Content>
 </ContentPage>
