@@ -19,13 +19,14 @@
     <ContentPage.Content>
         <Grid Margin="0,10,0,0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="225" />
+                <RowDefinition Height="250" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <BoxView Color="white" Grid.Column="0" Grid.RowSpan="2"/>
-            <!-- Set ShowPlaybackControls="False" and use the Play(), Pause() and Stop() methods to control playback with your own buttons. -->
-            <behaviors:MediaElement Source="https://sec.ch9.ms/ecn/ch9/wp7.mp4" ShowsPlaybackControls="True" AutoPlay="False" />
+            <Frame Grid.Row="0" CornerRadius="20" HasShadow="True" Grid.RowSpan="1" Margin="5,0,5,0" OutlineColor="#b3b3b3">
+                <!-- Set ShowPlaybackControls="False" and use the Play(), Pause() and Stop() methods to control playback with your own buttons. -->
+                <behaviors:MediaElement Source="https://sec.ch9.ms/ecn/ch9/wp7.mp4" ShowsPlaybackControls="True" AutoPlay="False" />
+            </Frame>
 
             <ScrollView Grid.Row="1">
                 <StackLayout  Orientation="Vertical" BackgroundColor="white" Padding="30,10,30,10" Spacing="10">
