@@ -19,12 +19,12 @@ namespace MobTestApp.Views
 
         private async void MobMarket_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//MobMarketPage");
+            await Shell.Current.Navigation.PushAsync(new MobMarketPage());
         }
 
         private async void MobPlaylist_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//MobPlaylistPage");
+            await Shell.Current.Navigation.PushAsync(new MobPlaylistPage());
         }
     }
 }

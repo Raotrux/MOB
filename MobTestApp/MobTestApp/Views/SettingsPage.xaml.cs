@@ -19,20 +19,20 @@ namespace MobTestApp.Views
 
         private async void ApplicationPage_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("ApplicationPage");
+            await Shell.Current.Navigation.PushAsync(new ApplicationPage());
         }
 
         private async void ProfilePage_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("ProfilePage");
+            await Shell.Current.Navigation.PushAsync(new ProfilePage());
         }
         private async void BillingPage_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("BillingPage");
+            await Shell.Current.Navigation.PushAsync(new BillingPage());
         }
         private async void PremiumPage_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("PremiumPage");
+            await Shell.Current.Navigation.PushAsync(new PremiumPage());
         }
     }
 }

@@ -83,8 +83,6 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
     
-    
-        
     <ShellContent Title="HomePage" Icon="MOB_Logo_2021_Test3.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
     <ShellContent Title="Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage" ContentTemplate="{DataTemplate local:DailyDosePage}" />
     <ShellContent Title="3min Mōb" Icon="MOB_Logo_2021_Test3.png" Route="ThreeMinMobPage" ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
@@ -100,7 +98,6 @@
         <ShellContent Title="Billing" Icon="MOB_Logo_2021_Test3.png" Route="BillingPage" ContentTemplate="{DataTemplate local:BillingPage}" />
         <ShellContent Title="Premium" Icon="MOB_Logo_2021_Test3.png" Route="PremiumPage" ContentTemplate="{DataTemplate local:PremiumPage}" />
     </FlyoutItem>
-
 
 
     <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
