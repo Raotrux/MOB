@@ -1,0 +1,233 @@
+<mxfile host="app.diagrams.net" modified="2021-05-13T21:06:04.924Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.56" etag="BnNKfd9hyQ3GIiCZOYJY" version="14.6.13" type="github" pages="2">
+  <diagram name="Basic Page Navigation" id="f1b7ffb7-ca1e-a977-7cf5-a751b3c06c05">
+    <mxGraphModel dx="2062" dy="1128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cs4QDS3-siQukoJEl-UC-64" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-61" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-64" vertex="1">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-63" value="Login Page" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-64" vertex="1">
+          <mxGeometry x="-55" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-65" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="240" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-66" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-65" vertex="1">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-67" value="Login Fail/Success" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-65" vertex="1">
+          <mxGeometry x="-55" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-68" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="480" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-69" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-68" vertex="1">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-70" value="MainPage" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-68" vertex="1">
+          <mxGeometry x="-55" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-71" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1380" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-72" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-71" vertex="1">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-73" value="Video Page" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-71" vertex="1">
+          <mxGeometry x="-55" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="cs4QDS3-siQukoJEl-UC-63" target="cs4QDS3-siQukoJEl-UC-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.025;entryY=0.499;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cs4QDS3-siQukoJEl-UC-67" target="cs4QDS3-siQukoJEl-UC-69" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="cs4QDS3-siQukoJEl-UC-76" target="cs4QDS3-siQukoJEl-UC-73" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.475;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cs4QDS3-siQukoJEl-UC-76" target="cs4QDS3-siQukoJEl-UC-80" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1040" y="412" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-76" value="MOB SELECT" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="980" y="155" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="cs4QDS3-siQukoJEl-UC-70" target="cs4QDS3-siQukoJEl-UC-76" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-79" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="940" y="414" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-80" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-79" vertex="1">
+          <mxGeometry x="10" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-81" value="My MOBs" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-79" vertex="1">
+          <mxGeometry x="-45" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-83" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1680" y="414" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-84" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-83" vertex="1">
+          <mxGeometry x="10" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-85" value="MOB Marketplace" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-83" vertex="1">
+          <mxGeometry x="-45" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="cs4QDS3-siQukoJEl-UC-89" target="cs4QDS3-siQukoJEl-UC-84" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="cs4QDS3-siQukoJEl-UC-89" target="cs4QDS3-siQukoJEl-UC-81" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-89" value="Any MOBs selected from MOB Marketplace populate in My MOBs" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="1330" y="551.5" width="160" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;entryX=0.465;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cs4QDS3-siQukoJEl-UC-95" target="cs4QDS3-siQukoJEl-UC-99" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-95" value="Settings" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="457.5" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="cs4QDS3-siQukoJEl-UC-69" target="cs4QDS3-siQukoJEl-UC-95" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-98" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry y="600" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-99" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-98" vertex="1">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-100" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-98" vertex="1">
+          <mxGeometry x="-55" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-101" value="Application" style="rounded=1;whiteSpace=wrap;html=1;" parent="cs4QDS3-siQukoJEl-UC-98" vertex="1">
+          <mxGeometry x="40" y="70" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-102" value="Billing" style="rounded=1;whiteSpace=wrap;html=1;" parent="cs4QDS3-siQukoJEl-UC-98" vertex="1">
+          <mxGeometry x="40" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-103" value="Premium" style="rounded=1;whiteSpace=wrap;html=1;" parent="cs4QDS3-siQukoJEl-UC-98" vertex="1">
+          <mxGeometry x="40" y="170" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-104" value="Profile" style="rounded=1;whiteSpace=wrap;html=1;" parent="cs4QDS3-siQukoJEl-UC-98" vertex="1">
+          <mxGeometry x="40" y="220" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="cs4QDS3-siQukoJEl-UC-101" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="698" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="430" y="685" />
+              <mxPoint x="430" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-107" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="700" y="457.5" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-108" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-107" vertex="1">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-109" value="Application Specific Settings" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-107" vertex="1">
+          <mxGeometry x="-55" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-110" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="290" y="920" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-111" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-110" vertex="1">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-112" value="Billing Information" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-110" vertex="1">
+          <mxGeometry x="-55" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.337;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="cs4QDS3-siQukoJEl-UC-102" target="cs4QDS3-siQukoJEl-UC-111" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="735" />
+              <mxPoint x="260" y="1051" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-114" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="770" y="900" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-115" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-114" vertex="1">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-116" value="Premium Specific options" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-114" vertex="1">
+          <mxGeometry x="-55" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;entryX=0.41;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cs4QDS3-siQukoJEl-UC-103" target="cs4QDS3-siQukoJEl-UC-115" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="785" />
+              <mxPoint x="210" y="910" />
+              <mxPoint x="632" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-118" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="20" y="1030" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-119" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="cs4QDS3-siQukoJEl-UC-118" vertex="1">
+          <mxGeometry width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-120" value="Profile Options" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;align=center;horizontal=0;" parent="cs4QDS3-siQukoJEl-UC-118" vertex="1">
+          <mxGeometry x="-55" y="105" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cs4QDS3-siQukoJEl-UC-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;entryX=0.995;entryY=0.065;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cs4QDS3-siQukoJEl-UC-104" target="cs4QDS3-siQukoJEl-UC-119" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="MEHkFoTcwWCktgnyYxfE" name="System Overview">
+    <mxGraphModel dx="1718" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-0" />
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-1" parent="GRWkLcvEEpDLoTOGf-wi-0" />
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-1">
+          <mxGeometry x="40" y="40" width="320" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-17" value="" style="group" vertex="1" connectable="0" parent="GRWkLcvEEpDLoTOGf-wi-1">
+          <mxGeometry x="870" y="600" width="105" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-12" value="" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.mobile" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-17">
+          <mxGeometry width="104.99844446748936" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-16" value="" style="group" vertex="1" connectable="0" parent="GRWkLcvEEpDLoTOGf-wi-17">
+          <mxGeometry x="15.555555555555555" y="56.66804936223168" width="85.55555555555556" height="38.8883127657368" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-14" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.apple;fillColor=#1B1C1C;strokeColor=none" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-16">
+          <mxGeometry y="0.4617987140931193" width="36.66666666666667" height="37.96471533755058" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-15" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/social-glyph/30/android-120.png" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-16">
+          <mxGeometry x="36.66666666666667" width="38.88831276573683" height="38.88831276573683" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-21" value="" style="group" vertex="1" connectable="0" parent="GRWkLcvEEpDLoTOGf-wi-1">
+          <mxGeometry x="790" y="50" width="280" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-20" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-21">
+          <mxGeometry width="280" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-19" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.youtube;fillColor=#FF2626;gradientColor=#B5171F" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-21">
+          <mxGeometry x="70" y="70" width="157.20000000000002" height="65.8" as="geometry" />
+        </mxCell>
+        <mxCell id="GRWkLcvEEpDLoTOGf-wi-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GRWkLcvEEpDLoTOGf-wi-1">
+          <mxGeometry x="40" y="40" width="320" height="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
