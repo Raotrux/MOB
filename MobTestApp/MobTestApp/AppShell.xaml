@@ -13,7 +13,7 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="#b3b3b3" />
+                <Setter Property="Shell.BackgroundColor" Value="#4d4d4d" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
@@ -40,13 +40,16 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="White" />
-                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                    <!-- This color changes the background of buttons in the tab menu-->
+                                    <Setter Property="BackgroundColor" Value="white" />
+                                    <!-- This color changes the background of the text in the tab menu-->
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="#4d4d4d" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Selected">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <!-- This color changes the background of buttons that is selected in the tab menu-->
+                                    <Setter Property="BackgroundColor" Value="#b3b3b3" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -63,7 +66,8 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                    <!-- This color changes the background of the Logout text button in the tab menu-->
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="black" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -77,34 +81,44 @@
         When the Flyout is visible this defines the content to display in the flyout.
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
-    -->
-    <FlyoutItem Title="Home Page - WIP" Icon="icon_about.png">
-        <ShellContent Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
+    
+    
+    <ShellContent Title="HomePage" Icon="MOB_Logo_2021_Test3.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
+    <ShellContent Title="Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage" ContentTemplate="{DataTemplate local:DailyDosePage}" />
+    <ShellContent Title="3min Mōb" Icon="MOB_Logo_2021_Test3.png" Route="ThreeMinMobPage" ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+    <ShellContent Title="My Mōb" Icon="MOB_Logo_2021_Test3.png" Route="MyMobPage" ContentTemplate="{DataTemplate local:MyMobPage}" />
+    <FlyoutItem Title="MyMobContent" Icon="icon_about.png" Route="MyMobContent" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Mōb Playlist" Icon="MOB_Logo_2021_Test3.png" Route="MobPlaylistPage" ContentTemplate="{DataTemplate local:MobPlaylistPage}" />
+        <ShellContent Title="Mōb Marketplace" Icon="MOB_Logo_2021_Test3.png" Route="MobMarketPage" ContentTemplate="{DataTemplate local:MobMarketPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Browse" Icon="icon_feed.png">
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
+    <ShellContent Title="Settings" Icon="MOB_Logo_2021_Test3.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}" />
+    <FlyoutItem Title="SettingsContent" Icon="icon_about.png" Route="SettingsContent" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Application" Icon="MOB_Logo_2021_Test3.png" Route="ApplicationPage" ContentTemplate="{DataTemplate local:ApplicationPage}" />
+        <ShellContent Title="Profile" Icon="MOB_Logo_2021_Test3.png" Route="ProfilePage" ContentTemplate="{DataTemplate local:ProfilePage}" />
+        <ShellContent Title="Billing" Icon="MOB_Logo_2021_Test3.png" Route="BillingPage" ContentTemplate="{DataTemplate local:BillingPage}" />
+        <ShellContent Title="Premium" Icon="MOB_Logo_2021_Test3.png" Route="PremiumPage" ContentTemplate="{DataTemplate local:PremiumPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="TemplateVideoPage - WIP" Icon="icon_feed.png">
-        <ShellContent Route="TemplateVideoPage" ContentTemplate="{DataTemplate local:TemplateVideoPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Daily Dose - WIP" Icon="MOB_Logo_2021_Test3.png">
-        <ShellContent Route="DailyDosePage" ContentTemplate="{DataTemplate local:DailyDosePage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="3min Mōb - WIP" Icon="MOB_Logo_2021_Test3.png">
-        <ShellContent Route="ThreeMinMobPage" ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="My Mōb - WIP" Icon="MOB_Logo_2021_Test3.png">
-        <ShellContent Route="MyMobPage" ContentTemplate="{DataTemplate local:MyMobPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Mob Market - WIP" Icon="MOB_Logo_2021_Test3.png">
-        <ShellContent Route="MobMarketPage" ContentTemplate="{DataTemplate local:MobMarketPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Settings - WIP" Icon="MOB_Logo_2021_Test3.png">
-        <ShellContent Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Profile - WIP" Icon="MOB_Logo_2021_Test3.png">
-        <ShellContent Route="ProfilePage" ContentTemplate="{DataTemplate local:ProfilePage}" />
-    </FlyoutItem>
+-->
+    <TabBar>
+        <Tab Title="HomePage" Icon="MOB_Logo_2021_Test3.png" Route="HomePage">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+        </Tab>
+        <Tab Title="Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage">
+            <ShellContent ContentTemplate="{DataTemplate local:DailyDosePage}" />
+        </Tab>
+        <Tab Title="3min Mōb" Icon="MOB_Logo_2021_Test3.png" Route="ThreeMinMobPage">
+            <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+        </Tab>
+        <Tab Title="My Mōb" Icon="MOB_Logo_2021_Test3.png" Route="MyMobPage">
+            <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+        </Tab>
+        <Tab Title="Settings" Icon="MOB_Logo_2021_Test3.png" Route="SettingsPage">
+            <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+        </Tab>
+    </TabBar>
+
+    
+   
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">

@@ -16,5 +16,23 @@ namespace MobTestApp.Views
         {
             InitializeComponent();
         }
+
+        private async void ApplicationPage_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushAsync(new ApplicationPage());
+        }
+
+        private async void ProfilePage_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushAsync(new ProfilePage());
+        }
+        private async void BillingPage_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushAsync(new BillingPage());
+        }
+        private async void PremiumPage_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushAsync(new PremiumPage());
+        }
     }
 }

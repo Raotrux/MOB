@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobTestApp.Views.HomePage"
              xmlns:vm="clr-namespace:MobTestApp.ViewModels"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             Shell.TabBarIsVisible="False">
 
     <ContentPage.BindingContext>
         <vm:HomeViewModel />
@@ -18,8 +19,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -33,34 +33,30 @@
                 </ContentView>
             </StackLayout>
         </StackLayout>
-        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-            <Button     Margin="100,0,100,0" 
-                        Text="Daily Dose"
-                        BackgroundColor="black"
-                        TextColor="White" 
-                        Clicked="DailyDose_Clicked"/>
-            <Button     Margin="100,0,100,0" 
-                        Text="3min Mōb"
-                        Clicked="ThreeMinMob_Clicked"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" />
-            <Button     Margin="100,0,100,0" 
-                        Text="My Mōb"
-                        Clicked="MyMob_Clicked"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" />
-        </StackLayout>
-        <StackLayout Grid.Row="2" Orientation="Horizontal" Padding="30,0,30,24" Spacing="10">
-            <Button Margin="30,0,30,0" Text="Settings"
-                        Clicked="Settings_Clicked"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" />
-        </StackLayout>
-        <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Padding="30,0,30,24" Spacing="10">
-            <Button Margin="30,0,30,0" Text="Profile"
-                        Clicked="Profile_Clicked"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" />
-        </StackLayout>
+
+        <Frame Grid.Row="1" CornerRadius="50" HasShadow="True" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="90,0,90,20" OutlineColor="#b3b3b3">
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" VerticalOptions="Center" Padding="10,0,10,0" Spacing="10">
+                <Button     Margin="0" 
+                            Text="Daily Dose"
+                            BackgroundColor="#b3b3b3"
+                            TextColor="White" 
+                            Clicked="DailyDose_Clicked"/>
+                <Button     Margin="0" 
+                            Text="3min Mōb"
+                            Clicked="ThreeMinMob_Clicked"
+                            BackgroundColor="#b3b3b3"
+                            TextColor="White" />
+                <Button     Margin="0" 
+                            Text="My Mōb"
+                            Clicked="MyMob_Clicked"
+                            BackgroundColor="#b3b3b3"
+                            TextColor="White" />
+                <Button     Margin="0" Text="Settings"
+                            Clicked="Settings_Clicked"
+                            BackgroundColor="#b3b3b3"
+                            TextColor="White" />
+            </StackLayout>
+        </Frame>
+
     </Grid>
 </ContentPage>

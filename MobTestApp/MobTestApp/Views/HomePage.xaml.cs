@@ -20,27 +20,22 @@ namespace MobTestApp.Views
 
         private async void DailyDose_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("DailyDosePage");
+            await Shell.Current.Navigation.PushAsync(new DailyDosePage());
         }
 
         private async void ThreeMinMob_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("ThreeMinMobPage");
+            await Shell.Current.Navigation.PushAsync(new ThreeMinMobPage());
         }
 
         private async void MyMob_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("MyMobPage");
+            await Shell.Current.Navigation.PushAsync(new MyMobPage());
         }
 
         private async void Settings_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("SettingsPage");
-        }
-
-        private async void Profile_Clicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync("ProfilePage");
+            await Shell.Current.Navigation.PushAsync(new SettingsPage());
         }
     }
 }

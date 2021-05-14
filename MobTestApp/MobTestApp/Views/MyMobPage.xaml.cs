@@ -16,5 +16,15 @@ namespace MobTestApp.Views
         {
             InitializeComponent();
         }
+
+        private async void MobMarket_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushAsync(new MobMarketPage());
+        }
+
+        private async void MobPlaylist_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushAsync(new MobPlaylistPage());
+        }
     }
 }
