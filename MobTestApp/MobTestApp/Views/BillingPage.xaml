@@ -3,8 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobTestApp.Views.BillingPage"
              xmlns:vm="clr-namespace:MobTestApp.ViewModels"
-             Title="{Binding Title}">
- 
+             Title="{Binding Title}"
+             Shell.TabBarIsVisible="False">
+
+    <ContentPage.BindingContext>
+        <vm:BillingViewModel />
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>

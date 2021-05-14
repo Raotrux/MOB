@@ -66,8 +66,8 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <!-- This color changes the background of the Logout button in the tab menu-->
-                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="white" />
+                                    <!-- This color changes the background of the Logout text button in the tab menu-->
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="black" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -81,7 +81,7 @@
         When the Flyout is visible this defines the content to display in the flyout.
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
-    -->
+    
     
     <ShellContent Title="HomePage" Icon="MOB_Logo_2021_Test3.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
     <ShellContent Title="Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage" ContentTemplate="{DataTemplate local:DailyDosePage}" />
@@ -98,10 +98,26 @@
         <ShellContent Title="Billing" Icon="MOB_Logo_2021_Test3.png" Route="BillingPage" ContentTemplate="{DataTemplate local:BillingPage}" />
         <ShellContent Title="Premium" Icon="MOB_Logo_2021_Test3.png" Route="PremiumPage" ContentTemplate="{DataTemplate local:PremiumPage}" />
     </FlyoutItem>
+-->
+    <TabBar>
+        <Tab Title="HomePage" Icon="MOB_Logo_2021_Test3.png" Route="HomePage">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+        </Tab>
+        <Tab Title="Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage">
+            <ShellContent ContentTemplate="{DataTemplate local:DailyDosePage}" />
+        </Tab>
+        <Tab Title="3min Mōb" Icon="MOB_Logo_2021_Test3.png" Route="ThreeMinMobPage">
+            <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+        </Tab>
+        <Tab Title="My Mōb" Icon="MOB_Logo_2021_Test3.png" Route="MyMobPage">
+            <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+        </Tab>
+        <Tab Title="Settings" Icon="MOB_Logo_2021_Test3.png" Route="SettingsPage">
+            <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+        </Tab>
+    </TabBar>
 
-
-    <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
-    <ShellContent Route="TemplateVideoPage" ContentTemplate="{DataTemplate local:TemplateVideoPage}" />
+    
    
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
