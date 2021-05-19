@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>Pixel_2_API_28</SelectedDevice>
     <DefaultDevice>Pixel_2_API_28</DefaultDevice>
-    <ActiveDebugProfile>Pixel_2_API_28</ActiveDebugProfile>
+    <ActiveDebugProfile>pixel_2_q_10_0_-_api_29</ActiveDebugProfile>
     <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

@@ -23,9 +23,10 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+        <StackLayout Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
                     <Image Source="MOB_Logo_2021_Test3.png" VerticalOptions="Center" HeightRequest="250" />
@@ -33,7 +34,8 @@
             </StackLayout>
         </StackLayout>
 
-        <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center" Padding="10,0,10,0" Margin="100,0,100,0" Spacing="10">
+        <Frame Grid.Row="1" CornerRadius="50" HasShadow="True" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="90,0,90,20" OutlineColor="#b3b3b3">
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" VerticalOptions="Center" Padding="10,0,10,0" Spacing="10">
                 <Button     Margin="0" 
                             Text="Daily Dose"
                             BackgroundColor="#b3b3b3"
@@ -54,7 +56,7 @@
                             BackgroundColor="#b3b3b3"
                             TextColor="White" />
             </StackLayout>
-        
+        </Frame>
 
     </Grid>
 </ContentPage>
