@@ -99,23 +99,28 @@
         <ShellContent Title="Premium" Icon="MOB_Logo_2021_Test3.png" Route="PremiumPage" ContentTemplate="{DataTemplate local:PremiumPage}" />
     </FlyoutItem>
 -->
-    <TabBar>
-        <Tab Title="HomePage" Icon="MOB_Logo_2021_Test3.png" Route="HomePage">
-            <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
-        </Tab>
-        <Tab Title="Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage">
-            <ShellContent ContentTemplate="{DataTemplate local:DailyDosePage}" />
+    <ShellContent Title="HomePage" Icon="MOB_Logo_2021_Test3.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
+    <TabBar Title="Routines" Icon="MOB_Logo_2021_Test3.png" Route="RoutinePage">
+        <Tab Title="1min Check In" Icon="MOB_Logo_2021_Test3.png" Route="CheckInPage">
+            <ShellContent ContentTemplate="{DataTemplate local:CheckInPage}" />
         </Tab>
         <Tab Title="3min Mōb" Icon="MOB_Logo_2021_Test3.png" Route="ThreeMinMobPage">
             <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
         </Tab>
-        <Tab Title="My Mōb" Icon="MOB_Logo_2021_Test3.png" Route="MyMobPage">
-            <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
-        </Tab>
-        <Tab Title="Settings" Icon="MOB_Logo_2021_Test3.png" Route="SettingsPage">
-            <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+        <Tab Title="10min Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage">
+            <ShellContent ContentTemplate="{DataTemplate local:DailyDosePage}" />
         </Tab>
     </TabBar>
+    <TabBar Title="My Mōb" Icon="MOB_Logo_2021_Test3.png" Route="MyMobPage">
+        <Tab Title="Singles" Icon="MOB_Logo_2021_Test3.png" Route="SinglesPage">
+            <ShellContent ContentTemplate="{DataTemplate local:SinglesPage}" />
+        </Tab>
+        <Tab Title="Mōb Marketplace" Icon="MOB_Logo_2021_Test3.png" Route="MobMarketPage">
+            <ShellContent ContentTemplate="{DataTemplate local:MobMarketPage}" />
+        </Tab>
+    </TabBar>
+    <ShellContent Title="Settings" Icon="MOB_Logo_2021_Test3.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}" />
+    
 
     
    

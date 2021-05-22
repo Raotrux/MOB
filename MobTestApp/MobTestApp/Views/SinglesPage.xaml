@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobTestApp.Views.SinglesPage"
+             xmlns:vm="clr-namespace:MobTestApp.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:SinglesViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
+                        <Image Source="MOB_Logo_2021_Test3.png" VerticalOptions="Center" HeightRequest="250" />
+                    </ContentView>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label Text="This is the Singles page."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

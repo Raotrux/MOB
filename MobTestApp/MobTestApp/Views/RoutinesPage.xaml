@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobTestApp.Views.MyMobPage"
+             x:Class="MobTestApp.Views.RoutinesPage"
              xmlns:vm="clr-namespace:MobTestApp.ViewModels"
              Title="{Binding Title}"
-             Shell.TabBarIsVisible="False">
+             Shell.TabBarIsVisible="True">
 
     <ContentPage.BindingContext>
-        <vm:MyMobViewModel />
+        <vm:RoutinesViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.Resources>
@@ -36,17 +36,22 @@
             </StackLayout>
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Button     Margin="100,0,100,0" 
-                        Text="Mōb Marketplace"
+                        Text="1min CheckIn"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" 
-                        Clicked="MobMarket_Clicked"/>
+                        Clicked="CheckIn_Clicked"/>
                 <Button     Margin="100,0,100,0" 
-                        Text="Mōb Playlist"
-                        Clicked="MobPlaylist_Clicked"
+                        Text="3min Mob"
+                        Clicked="ThreeMinMob_Clicked"
+                        BackgroundColor="#b3b3b3"
+                        TextColor="White" />
+                <Button     Margin="100,0,100,0" 
+                        Text="10min Daily Dose"
+                        Clicked="DailyDose_Clicked"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
             </StackLayout>
-            
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>

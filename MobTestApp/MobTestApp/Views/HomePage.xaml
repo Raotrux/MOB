@@ -35,21 +35,21 @@
 
         <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center" Padding="10,0,10,0" Margin="100,0,100,0" Spacing="10">
                 <Button     Margin="0" 
-                            Text="Daily Dose"
+                            Text="What is Mōb?"
                             BackgroundColor="#b3b3b3"
                             TextColor="White" 
-                            Clicked="DailyDose_Clicked"/>
+                            Clicked="About_Clicked"/>
                 <Button     Margin="0" 
-                            Text="3min Mōb"
-                            Clicked="ThreeMinMob_Clicked"
+                            Text="Routines"
+                            Clicked="Routines_Clicked"
                             BackgroundColor="#b3b3b3"
                             TextColor="White" />
                 <Button     Margin="0" 
-                            Text="My Mōb"
-                            Clicked="MyMob_Clicked"
+                            Text="Mōb Library"
+                            Clicked="MobLibrary_Clicked"
                             BackgroundColor="#b3b3b3"
                             TextColor="White" />
-                <Button     Margin="0" Text="Settings"
+                <Button     Margin="0" Text="Settings (become a cog)"
                             Clicked="Settings_Clicked"
                             BackgroundColor="#b3b3b3"
                             TextColor="White" />
