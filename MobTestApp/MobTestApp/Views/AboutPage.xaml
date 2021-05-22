@@ -1,8 +1,10 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobTestApp.Views.AboutPage"
-             xmlns:vm="clr-namespace:MobTestApp.ViewModels"
-             Title="{Binding Title}">
+             xmlns:vm="clr-namespace:MobTestApp.ViewModels" 
+             xmlns:behaviors="http://xamarin.com/schemas/2020/toolkit"
+             Title="{Binding Title}"
+             Shell.TabBarIsVisible="False">
     
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
@@ -19,38 +21,16 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <Label Text="Pulling from a local file" />
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
-                    <Image Source="humanfirst.png" VerticalOptions="Center" HeightRequest="100" />
-                </ContentView>
-            </StackLayout>
-        </StackLayout>
-        <StackLayout Grid.Row="1" BackgroundColor="Green" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <Label Text="Pulling from a website" />
-            <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
-                <Image Source="https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_1280.jpg" VerticalOptions="Center" WidthRequest="220" />
-            </ContentView>
-        </StackLayout>
-        <ScrollView Grid.Row="2">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Start developing now" FontSize="Title"/>
-                <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
-                <Label FontSize="16" Padding="0,24,0,0">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="Learn more at "/>
-                                <Span Text="https://www.github.com" FontAttributes="Bold"/>
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Button Margin="0,10,0,0" Text="Learn more"
-                        Command="{Binding OpenWebCommand}"
-                        BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
+        <Frame Grid.Row="0" CornerRadius="20" HasShadow="True" Grid.RowSpan="1" Margin="5,0,5,0" OutlineColor="#b3b3b3" >
+            <!-- Set ShowPlaybackControls="False" and use the Play(), Pause() and Stop() methods to control playback with your own buttons. -->
+            <behaviors:MediaElement x:Name="mediaElement" ShowsPlaybackControls="True" AutoPlay="False" />
+        </Frame>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout  Orientation="Vertical" BackgroundColor="white" Padding="30,10,30,10" Spacing="10">
+                <Label Text="Daily Dose" FontSize="Title" FontAttributes="Bold" />
+                <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill" />
+                <Label Text="This is where the Daily Dose stuff would be." FontSize="16" Padding="0,0,0,0"/>
             </StackLayout>
         </ScrollView>
     </Grid>

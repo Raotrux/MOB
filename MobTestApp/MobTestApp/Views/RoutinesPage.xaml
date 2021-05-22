@@ -4,7 +4,7 @@
              x:Class="MobTestApp.Views.RoutinesPage"
              xmlns:vm="clr-namespace:MobTestApp.ViewModels"
              Title="{Binding Title}"
-             Shell.TabBarIsVisible="True">
+             Shell.TabBarIsVisible="False">
 
     <ContentPage.BindingContext>
         <vm:RoutinesViewModel />
@@ -30,7 +30,7 @@
             <StackLayout Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                     <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
-                        <Image Source="MOB_Logo_2021_Test3.png" VerticalOptions="Center" HeightRequest="250" />
+                        <Image Source="MOB_Logo_2021_Test3.png" VerticalOptions="Center" HeightRequest="100" />
                     </ContentView>
                 </StackLayout>
             </StackLayout>

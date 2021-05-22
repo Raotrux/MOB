@@ -99,27 +99,22 @@
         <ShellContent Title="Premium" Icon="MOB_Logo_2021_Test3.png" Route="PremiumPage" ContentTemplate="{DataTemplate local:PremiumPage}" />
     </FlyoutItem>
 -->
-    <ShellContent Title="HomePage" Icon="MOB_Logo_2021_Test3.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
-    <TabBar Title="Routines" Icon="MOB_Logo_2021_Test3.png" Route="RoutinePage">
-        <Tab Title="1min Check In" Icon="MOB_Logo_2021_Test3.png" Route="CheckInPage">
-            <ShellContent ContentTemplate="{DataTemplate local:CheckInPage}" />
+
+    <TabBar>
+        <ShellContent Title="Home" Icon="MOB_Logo_2021_Test3.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Title="What is Mob?" Icon="MOB_Logo_2021_Test3.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <Tab Title="Routines" Icon="MOB_Logo_2021_Test3.png" Route="RoutinesPage">
+            <ShellContent Title="1min Check In" Icon="MOB_Logo_2021_Test3.png" Route="CheckInPage" ContentTemplate="{DataTemplate local:CheckInPage}" />
+            <ShellContent Title="3min Mob" Icon="MOB_Logo_2021_Test3.png" Route="ThreeMinMobPage" ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+            <ShellContent Title="10min Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage" ContentTemplate="{DataTemplate local:DailyDosePage}" />
         </Tab>
-        <Tab Title="3min Mōb" Icon="MOB_Logo_2021_Test3.png" Route="ThreeMinMobPage">
-            <ShellContent ContentTemplate="{DataTemplate local:ThreeMinMobPage}" />
+        <Tab Title="Mob Library" Icon="MOB_Logo_2021_Test3.png" Route="MobLibraryPage">
+            <ShellContent Title="Singles" Icon="MOB_Logo_2021_Test3.png" Route="SinglesPage" ContentTemplate="{DataTemplate local:SinglesPage}" />
+            <ShellContent Title="Mob Market" Icon="MOB_Logo_2021_Test3.png" Route="MobMarketPage" ContentTemplate="{DataTemplate local:MobMarketPage}" />
         </Tab>
-        <Tab Title="10min Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage">
-            <ShellContent ContentTemplate="{DataTemplate local:DailyDosePage}" />
-        </Tab>
+        <ShellContent Title="Settings" Icon="MOB_Logo_2021_Test3.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}" />
     </TabBar>
-    <TabBar Title="My Mōb" Icon="MOB_Logo_2021_Test3.png" Route="MyMobPage">
-        <Tab Title="Singles" Icon="MOB_Logo_2021_Test3.png" Route="SinglesPage">
-            <ShellContent ContentTemplate="{DataTemplate local:SinglesPage}" />
-        </Tab>
-        <Tab Title="Mōb Marketplace" Icon="MOB_Logo_2021_Test3.png" Route="MobMarketPage">
-            <ShellContent ContentTemplate="{DataTemplate local:MobMarketPage}" />
-        </Tab>
-    </TabBar>
-    <ShellContent Title="Settings" Icon="MOB_Logo_2021_Test3.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}" />
+    
     
 
     

@@ -20,12 +20,12 @@ namespace MobTestApp.Views
 
         private async void Routines_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.Navigation.PushAsync(new RoutinesPage());
+            await Shell.Current.Navigation.PushAsync(new TabbedRoutinesLibrary());
         }
 
         private async void MobLibrary_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.Navigation.PushAsync(new MobLibraryPage());
+            await Shell.Current.Navigation.PushAsync(new TabbedRoutinesLibrary());
         }
 
         private async void Settings_Clicked(object sender, EventArgs e)
