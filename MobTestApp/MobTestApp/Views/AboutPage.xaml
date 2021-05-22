@@ -1,4 +1,5 @@
-﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobTestApp.Views.AboutPage"
              xmlns:vm="clr-namespace:MobTestApp.ViewModels" 
@@ -16,9 +17,9 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid>
+    <Grid Margin="0,10,0,0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="250" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Frame Grid.Row="0" CornerRadius="20" HasShadow="True" Grid.RowSpan="1" Margin="5,0,5,0" OutlineColor="#b3b3b3" >
@@ -28,9 +29,9 @@
 
         <ScrollView Grid.Row="1">
             <StackLayout  Orientation="Vertical" BackgroundColor="white" Padding="30,10,30,10" Spacing="10">
-                <Label Text="Daily Dose" FontSize="Title" FontAttributes="Bold" />
+                <Label Text="What is Mob?" FontSize="Title" FontAttributes="Bold" />
                 <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill" />
-                <Label Text="This is where the Daily Dose stuff would be." FontSize="16" Padding="0,0,0,0"/>
+                <Label Text="This is where the stuff about Mob would be." FontSize="16" Padding="0,0,0,0"/>
             </StackLayout>
         </ScrollView>
     </Grid>
