@@ -36,7 +36,7 @@ namespace MobTestApp.Views
                 // var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
 
                 // Then use it with MediaElement
-                mediaElement.Source = streamInfo.Url;
+                videoSource.Source = streamInfo.Url;
             }
         }
     }

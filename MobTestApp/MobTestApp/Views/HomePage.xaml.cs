@@ -18,9 +18,9 @@ namespace MobTestApp.Views
 
         }
 
-        private async void Routines_Clicked(object sender, EventArgs e)
+        private async void DailyDose_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.Navigation.PushAsync(new TabbedRoutinesLibrary());
+            await Shell.Current.Navigation.PushAsync(new DailyDosePage());
         }
 
         private async void MobLibrary_Clicked(object sender, EventArgs e)

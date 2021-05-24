@@ -34,24 +34,24 @@
         </StackLayout>
 
         <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center" Padding="10,0,10,0" Margin="100,0,100,0" Spacing="10">
-                <Button     Margin="0" 
+            <Button     Margin="0" 
                             Text="What is Mōb?"
                             FontFamily="ProstoOne"
                             BackgroundColor="#b3b3b3"
                             TextColor="#4d4d4d" 
                             Clicked="About_Clicked"/>
-                <Button     Margin="0" 
-                            Text="Routines"
-                            FontFamily="ProstoOne"
-                            Clicked="Routines_Clicked"
-                            BackgroundColor="#b3b3b3"
-                            TextColor="#4d4d4d" />
-                <Button     Margin="0" 
+            <Button     Margin="0" 
                             Text="Mōb Library"
                             FontFamily="ProstoOne"
                             Clicked="MobLibrary_Clicked"
                             BackgroundColor="#b3b3b3"
                             TextColor="White" />
+            <Button     Margin="0" 
+                            Text="Daily Dose"
+                            FontFamily="ProstoOne"
+                            Clicked="DailyDose_Clicked"
+                            BackgroundColor="#b3b3b3"
+                            TextColor="#4d4d4d" />
                 <Button     Margin="0" Text="Settings (become a cog)"
                             Clicked="Settings_Clicked"
                             FontFamily="ProstoOne"

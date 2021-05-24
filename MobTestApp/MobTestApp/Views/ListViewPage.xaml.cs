@@ -24,9 +24,10 @@ namespace MobTestApp.Views
         public ListViewPage()
         {
             InitializeComponent();
-            MyListView.BindingContext = this;
+            BindingContext = this;
 
             CreateVideosFromPlaylist();
+            
         }
 
         private async void CreateVideosFromPlaylist()
