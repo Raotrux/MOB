@@ -1,4 +1,5 @@
 ﻿using MobTestApp.Models;
+using MobTestApp.ViewModels;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -16,11 +17,14 @@ namespace MobTestApp.Views
     public partial class ListViewPage : ContentPage
     {
         public ObservableCollection<Item> Items { get; set; }
+        public string VideoId { get; set; }
+        public string VideoTitle { get; set; }
+        public string VideoDescription { get; set; }
 
         public ListViewPage()
         {
             InitializeComponent();
-            BindingContext = this;
+            MyListView.BindingContext = this;
 
             CreateVideosFromPlaylist();
         }
@@ -37,15 +41,15 @@ namespace MobTestApp.Views
             {
                 for (int index = 0; index < videos.Count; index++)
                 {
-                    string title = videos[index].Title;
-                    string id = videos[index].Id;
+                    VideoTitle = videos[index].Title;
+                    VideoId = videos[index].Id;
                     string url = videos[index].Url;
-                    string thumbnail = "https://img.youtube.com/vi/" + id + "/0.jpg";
+                    string thumbnail = "https://img.youtube.com/vi/" + VideoId + "/0.jpg";
 
                     var video = await youtube.Videos.GetAsync(url);
-                    string description = video.Description;
+                    VideoDescription = video.Description;
 
-                    Items.Add(new Item() { Id = id, Title = title, Thumbnail = thumbnail, Description = description });
+                    Items.Add(new Item() { Id = VideoId, Title = VideoTitle, Thumbnail = thumbnail, Description = VideoDescription });
                 }
             };
             MyListView.ItemsSource = Items;
@@ -55,8 +59,15 @@ namespace MobTestApp.Views
         {
             if (e.Item == null)
                 return;
-            
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+
+            var message = (Item)e.Item;
+            var test1 = message.Id;
+            var test2 = message.Title;
+            var test3 = message.Description;
+
+            await Shell.Current.Navigation.PushAsync(new VideoPage(test1, test2, test3));
+
+            //await DisplayAlert("Item Tapped", "An item was tapped." + test1 + "/" + test2 + "/" + test3, "OK");
 
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
