@@ -28,7 +28,7 @@ namespace MobTestApp.ViewModels
                 && !String.IsNullOrWhiteSpace(thumbnail);
         }
 
-        public string Title
+        public new string Title
         {
             get => title;
             set => SetProperty(ref title, value);

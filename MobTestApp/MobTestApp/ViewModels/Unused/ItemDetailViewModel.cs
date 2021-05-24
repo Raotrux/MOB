@@ -15,7 +15,7 @@ namespace MobTestApp.ViewModels
         private string thumbnail;
         public string Id { get; set; }
 
-        public string Title
+        public new string Title
         {
             get => title;
             set => SetProperty(ref title, value);
