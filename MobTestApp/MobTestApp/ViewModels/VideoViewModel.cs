@@ -7,6 +7,7 @@ namespace MobTestApp.ViewModels
 {
     public class VideoViewModel : BaseViewModel
     {
+
         public VideoViewModel()
         {
             Title = "Video Page";

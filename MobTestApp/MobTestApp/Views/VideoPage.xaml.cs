@@ -42,6 +42,8 @@ namespace MobTestApp.Views
 
                 // Then use it with MediaElement
                 videoSource.Source = streamInfo.Url;
+                videoTitle.Text = VideoTitle;
+                videoDescription.Text = VideoDescription;
             }
         }
     }
