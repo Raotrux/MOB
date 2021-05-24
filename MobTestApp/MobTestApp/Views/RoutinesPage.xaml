@@ -46,8 +46,8 @@
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
                 <Button     Margin="100,0,100,0" 
-                        Text="10min Daily Dose"
-                        Clicked="DailyDose_Clicked"
+                        Text="ListView Page"
+                        Clicked="ListView_Clicked"
                         BackgroundColor="#b3b3b3"
                         TextColor="White" />
             </StackLayout>

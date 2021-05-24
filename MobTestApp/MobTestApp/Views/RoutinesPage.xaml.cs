@@ -27,9 +27,9 @@ namespace MobTestApp.Views
             await Shell.Current.Navigation.PushAsync(new ThreeMinMobPage());
         }
 
-        private async void DailyDose_Clicked(object sender, EventArgs e)
+        private async void ListView_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.Navigation.PushAsync(new DailyDosePage());
+            await Shell.Current.Navigation.PushAsync(new ListViewPage());
         }
     }
 }
