@@ -5,9 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-using ComicBookPCL;
-
-namespace ComicBook.iOS
+namespace MobTestApp.iOS
 {
     public partial class AppDelegate
     {
