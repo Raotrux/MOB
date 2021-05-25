@@ -158,10 +158,10 @@
     <AndroidResource Include="Resources\expand.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\MOB_Logo_NeuemorphDark.png" />
+    <BundleResource Include="Resources\darklogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\MOB_Logo_NeuemorphLight.png" />
+    <BundleResource Include="Resources\lightlogo.png" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
