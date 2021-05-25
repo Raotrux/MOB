@@ -20,6 +20,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -33,7 +34,7 @@
             </StackLayout>
         </StackLayout>
 
-        <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center" Padding="10,0,10,0" Margin="100,0,100,0" Spacing="10">
+        <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Start" Padding="10,0,10,0" Margin="100,0,100,0" Spacing="20" >
             <Button     Margin="0" 
                             Text="What is Mōb?"
                             FontFamily="ProstoOne"
@@ -46,11 +47,13 @@
                             Text="Daily Dose"
                             FontFamily="ProstoOne"
                             Clicked="DailyDose_Clicked"/>
-                <Button     Margin="0" Text="Settings (become a cog)"
-                            Clicked="Settings_Clicked"
-                            FontFamily="ProstoOne" />
-            </StackLayout>
-        
-
+        </StackLayout>
+        <StackLayout Grid.Row="2">
+            <Image Source="settingscog.png" HorizontalOptions="End" Margin="0,0,10,10" HeightRequest="40">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Settings_Clicked" />
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
     </Grid>
 </ContentPage>
