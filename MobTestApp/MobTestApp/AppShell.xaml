@@ -12,6 +12,9 @@
 
     <Shell.Resources>
         <ResourceDictionary>
+            <!-- These colors are for the App Shell (App Shell is the framework/skeleton of the app
+            You'll see these elements typically in the Hamburger menu (FlyoutDisplay) 
+            or the bottom/top bars (TabBar,Tabs,TabbedPages,Back Arrow) -->
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Dark={StaticResource BackgroundColorDark}, 
                         Light={StaticResource BackgroundColorLight}}" />
@@ -30,9 +33,12 @@
                 <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Dark={StaticResource PrimaryTextDark}, 
                         Light={StaticResource PrimaryTextLight}}"/>
             </Style>
-            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <!--<Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />-->
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
-            
+            <Style Class="TabBar" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource BackgroundColorDark}, 
+                        Light={StaticResource BackgroundColorLight}}"></Setter>
+            </Style>
 
             <!--
             Default Styles for all Flyout Items
@@ -85,7 +91,9 @@
                 </Setter>
             </Style>
             
-            <!-- I added these -->
+            <!-- This is where you set the color for each target. 
+            These "StaticResources" are referencing the Colors around lines ~10-40 in App.xaml. 
+            Must set a color for each theme. -->
             <Style TargetType="ContentPage">
                 <Setter Property="BackgroundColor"
                      Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
@@ -150,6 +158,14 @@
     </FlyoutItem>
 -->
 
+    
+    
+    <!-- While I have set stuff here, I don't quite understand what it's doing. Changing stuff doesn't give me the expected results. 
+    As of writing this comment (5/25/2021), navigation is working as intended so I'm just ignoring this stuff for now.
+    This is the content that populates the FlyoutDisplay,TabBar,Tabs. 
+    Adding a ShellContent into the outer TabBar makes an entry into the FlyoutDisplay or TabBar. 
+    Adding multiple ShellContents inside a single Tab causes those to become tabs.
+    -->
     <TabBar>
         <ShellContent Title="Home" Icon="MOB_Logo_2021_Test3.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
         <ShellContent Title="What is Mob?" Icon="MOB_Logo_2021_Test3.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
