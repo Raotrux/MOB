@@ -50,7 +50,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Grid.ColumnSpan="2">
-                                <Frame CornerRadius="5" HasShadow="True" Margin="5,5,10,5" OutlineColor="#b3b3b3" Padding="0,0,0,0">
+                                <Frame CornerRadius="5" HasShadow="True" Margin="5,5,10,5" Padding="0,0,0,0">
                                     <StackLayout Orientation="Horizontal">
                                         <StackLayout Grid.Column="0">
                                             <Image Source="{Binding Thumbnail}"></Image>
