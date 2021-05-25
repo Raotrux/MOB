@@ -163,6 +163,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\lightlogo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\settingscog.png" />
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
       <UserProperties TriggeredFromHotReload="False" />
