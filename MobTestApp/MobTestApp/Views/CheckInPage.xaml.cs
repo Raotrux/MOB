@@ -14,13 +14,13 @@ using YoutubeExplode.Common;
 namespace MobTestApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DailyDosePage : ContentPage
+    public partial class CheckInPage : ContentPage
     {
         public ObservableCollection<Item> Items { get; set; }
         public string VideoId { get; set; }
         public string VideoTitle { get; set; }
         public string VideoDescription { get; set; }
-        public DailyDosePage()
+        public CheckInPage()
         {
             InitializeComponent();
             BindingContext = this;
@@ -49,7 +49,7 @@ namespace MobTestApp.Views
                     Items.Add(new Item() { Id = VideoId, Title = VideoTitle, Thumbnail = thumbnail, Description = VideoDescription });
                 }
             };
-            DailyDoseVideos.ItemsSource = Items;
+            CheckInVideos.ItemsSource = Items;
         }
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)

@@ -34,8 +34,6 @@ namespace MobTestApp
             //Routing.RegisterRoute(nameof(MobPlaylistPage), typeof(MobPlaylistPage));
 
 
-            //Basic Video page
-            Routing.RegisterRoute(nameof(TemplateVideoPage), typeof(TemplateVideoPage));
             
             
         }

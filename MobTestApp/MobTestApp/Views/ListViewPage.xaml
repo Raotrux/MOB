@@ -1,22 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobTestApp.Views.DailyDosePage"
-             xmlns:vm="clr-namespace:MobTestApp.ViewModels"
-             xmlns:behaviors="http://xamarin.com/schemas/2020/toolkit"
-             Title="{Binding Title}"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="MobTestApp.Views.ListViewPage"
              Shell.TabBarIsVisible="False">
-
-    <ContentPage.BindingContext>
-        <vm:DailyDoseViewModel />
-    </ContentPage.BindingContext>
-
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
     <ContentPage.Content>
         <Grid Margin="0,0,0,0">
             <Grid.RowDefinitions>
@@ -29,21 +16,20 @@
             </Grid.ColumnDefinitions>
 
             <!-- Playlist -->
-            <StackLayout Margin="10,10,10,0" Grid.Row="0" Grid.ColumnSpan="2">
+            <StackLayout Margin="10,10,10,0" Grid.Row="1" Grid.ColumnSpan="2">
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Daily Dose" FontFamily="ProstoOne" FontSize="Title" Grid.Column="0" WidthRequest="350"></Label>
+                    <Label Text="Playlist Videos" FontFamily="ProstoOne" FontSize="Title" Grid.Column="0" WidthRequest="350"></Label>
                 </StackLayout>
                 <StackLayout>
                     <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill" />
                 </StackLayout>
             </StackLayout>
 
-            <ListView x:Name="DailyDoseVideos"
+            <ListView x:Name="MyListView"
                         ItemsSource="{Binding Items}"
                         ItemTapped="Handle_ItemTapped"
                         CachingStrategy="RecycleElement"
-                        RowHeight="140"
-                      Grid.Row="1">
+                        RowHeight="140">
                 <!--Built in Cells-->
 
                 <ListView.ItemTemplate>
@@ -70,3 +56,19 @@
         </Grid>
     </ContentPage.Content>
 </ContentPage>
+
+<!--Custom View Cells-->
+    <!--
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout>
+            <Label Text="{Binding Text}" 
+                   Style="{DynamicResource ListItemTextStyle}" />
+            <Label Text="{Binding Detail}" 
+                   Style="{DynamicResource ListItemDetailTextStyle}"/>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+    -->

@@ -9,8 +9,9 @@ namespace MobTestApp.ViewModels
 {
     public class NewItemViewModel : BaseViewModel
     {
-        private string text;
+        private string title;
         private string description;
+        private string thumbnail;
 
         public NewItemViewModel()
         {
@@ -22,20 +23,27 @@ namespace MobTestApp.ViewModels
 
         private bool ValidateSave()
         {
-            return !String.IsNullOrWhiteSpace(text)
-                && !String.IsNullOrWhiteSpace(description);
+            return !String.IsNullOrWhiteSpace(title)
+                && !String.IsNullOrWhiteSpace(description)
+                && !String.IsNullOrWhiteSpace(thumbnail);
         }
 
-        public string Text
+        public new string Title
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => title;
+            set => SetProperty(ref title, value);
         }
 
         public string Description
         {
             get => description;
             set => SetProperty(ref description, value);
+        }
+
+        public string Thumbnail
+        {
+            get => thumbnail;
+            set => SetProperty(ref thumbnail, value);
         }
 
         public Command SaveCommand { get; }
@@ -52,8 +60,9 @@ namespace MobTestApp.ViewModels
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = Text,
-                Description = Description
+                Title = Title,
+                Description = Description,
+                Thumbnail = Thumbnail
             };
 
             await DataStore.AddItemAsync(newItem);

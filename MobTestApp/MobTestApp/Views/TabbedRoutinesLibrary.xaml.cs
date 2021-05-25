@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace MobTestApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TemplateVideoPage : ContentPage
+    public partial class TabbedRoutinesLibrary : TabbedPage
     {
-        public TemplateVideoPage()
+        public TabbedRoutinesLibrary()
         {
-            Device.SetFlags(new string[] { "MediaElement_Experimental" });
+            InitializeComponent();
         }
     }
 }

@@ -23,19 +23,19 @@ namespace MobTestApp.Views
             await Shell.Current.Navigation.PushAsync(new DailyDosePage());
         }
 
-        private async void ThreeMinMob_Clicked(object sender, EventArgs e)
+        private async void MobLibrary_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.Navigation.PushAsync(new ThreeMinMobPage());
-        }
-
-        private async void MyMob_Clicked(object sender, EventArgs e)
-        {
-            await Shell.Current.Navigation.PushAsync(new MyMobPage());
+            await Shell.Current.Navigation.PushAsync(new TabbedRoutinesLibrary());
         }
 
         private async void Settings_Clicked(object sender, EventArgs e)
         {
             await Shell.Current.Navigation.PushAsync(new SettingsPage());
+        }
+
+        private async void About_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushAsync(new AboutPage());
         }
     }
 }
