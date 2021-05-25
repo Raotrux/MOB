@@ -30,7 +30,7 @@
             <!-- Playlist -->
             <StackLayout Margin="10,10,10,0" Grid.Row="0" Grid.ColumnSpan="2">
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Singles" FontFamily="ProstoOne" FontSize="Title" Grid.Column="0" WidthRequest="350"></Label>
+                    <Label Text="Check In" FontFamily="ProstoOne" FontSize="Title" Grid.Column="0" WidthRequest="350"></Label>
                 </StackLayout>
                 <StackLayout>
                     <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill" />
