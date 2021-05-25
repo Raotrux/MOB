@@ -35,26 +35,13 @@
                 </StackLayout>
             </StackLayout>
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Button     Margin="100,0,100,0" 
-                        Text="Application"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" 
-                        Clicked="ApplicationPage_Clicked"/>
-                <Button     Margin="100,0,100,0" 
-                        Text="Profile"
-                        Clicked="ProfilePage_Clicked"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" />
-                <Button     Margin="100,0,100,0" 
-                        Text="Billing"
-                        Clicked="BillingPage_Clicked"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" />
+                <Label x:Name="appTheme"></Label>
                 <Button     Margin="100,0,100,0" 
                         Text="Premium"
-                        Clicked="PremiumPage_Clicked"
-                        BackgroundColor="#b3b3b3"
-                        TextColor="White" />
+                        Clicked="ChangeTheme_Clicked"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource ButtonBackgroundColorLight}, Dark={StaticResource ButtonBackgroundColorDark}}"
+                            TextColor="{AppThemeBinding Light={StaticResource ButtonTextColorLight}, Dark={StaticResource ButtonTextColorDark}}"
+                            />
             </StackLayout>
         </Grid>
     </ContentPage.Content>

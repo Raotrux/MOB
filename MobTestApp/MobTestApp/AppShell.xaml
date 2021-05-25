@@ -13,18 +13,19 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="#4d4d4d" />
-                <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="White" />
-                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource TabBarBackgroundColorLight}" />
+                <Setter Property="Shell.ForegroundColor" Value="{StaticResource AccentColorLight}" />
+                <Setter Property="Shell.TitleColor" Value="{StaticResource PrimaryTextLight}" />
+                <Setter Property="Shell.DisabledColor" Value="{StaticResource ButtonBackgroundDisabledColorLight}" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource HeaderBarBackgroundColorLight}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource AccentColorLight}"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource PrimaryTextLight}"/>
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+            
 
             <!--
             Default Styles for all Flyout Items
@@ -74,6 +75,39 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+            
+            <!-- I added these -->
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor"
+                     Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+            <Style TargetType="Grid">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+            <Style TargetType="StackLayout">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+            <Style TargetType="ListView">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+            <Style TargetType="Frame">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+            <Style TargetType="ScrollView">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+
         </ResourceDictionary>
     </Shell.Resources>
 

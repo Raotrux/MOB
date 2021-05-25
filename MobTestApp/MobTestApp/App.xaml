@@ -6,26 +6,57 @@
     -->
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#2196F3</Color>
+            <!-- These are colors I've added -->
+            <!-- Light Theme -->
+            <Color x:Key="TabBarBackgroundColorLight">#e6e6e6</Color>
+            <Color x:Key="ButtonTextColorLight">#ffffff</Color>
+            <Color x:Key="ButtonBackgroundColorLight">#b3b3b3</Color>
+            <Color x:Key="TextColorLight">#4d4d4d</Color>
+            <Color x:Key="HeaderBarBackgroundColorLight">#e6e6e6</Color>
+            <Color x:Key="HeaderBarTextColorLight">#b3b3b3</Color>
+            <Color x:Key="ButtonBackgroundDisabledColorLight">#efd792</Color>
+            <Color x:Key="AccentColorLight">#f2be1a</Color>
+            <Color x:Key="PrimaryBackgroundLight">#ffffff</Color>
+            <Color x:Key="PrimaryTextLight">#4d4d4d</Color>
+
+            <!-- Dark Theme -->
+            <Color x:Key="ButtonBackgroundColorDark">#b3b3b3</Color>
+            <Color x:Key="ButtonTextColorDark">#e6e6e6</Color>
+            <Color x:Key="BackgroundColorDark">#4d4d4d</Color>
+            <Color x:Key="TextColorDark">#e6e6e6</Color>
+            <Color x:Key="HeaderBarBackgroundColorDark">#b3b3b3</Color>
+            <Color x:Key="HeaderBarTextColorDark">#e6e6e6</Color>
+            <Color x:Key="AccentColorDark">#f2be1a</Color>
+            <Color x:Key="ButtonBackgroundDisabledColorDark">#efd792</Color>
+            <Color x:Key="PrimaryBackgroundDark">#4d4d4d</Color>
+            <Color x:Key="PrimaryTextDark">#b3b3b3</Color>
+            
             <Style TargetType="Button">
-                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="TextColor" 
+            Value="{AppThemeBinding Dark={StaticResource ButtonTextColorDark}, 
+                        Light={StaticResource ButtonTextColorLight}}" />
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <Setter Property="BackgroundColor" 
+                                Value="{AppThemeBinding Dark={StaticResource ButtonBackgroundColorDark}, 
+                        Light={StaticResource ButtonBackgroundColorLight}}"  />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Disabled">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="#332196F3" />
+                                    <Setter Property="BackgroundColor" 
+                                Value="{AppThemeBinding Dark={StaticResource ButtonBackgroundDisabledColorDark}, 
+                        Light={StaticResource ButtonBackgroundDisabledColorLight}}"  />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+
         </ResourceDictionary>        
     </Application.Resources>
 </Application>
