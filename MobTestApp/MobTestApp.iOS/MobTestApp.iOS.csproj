@@ -157,6 +157,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\expand.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\darklogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lightlogo.png" />
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
       <UserProperties TriggeredFromHotReload="False" />

@@ -28,7 +28,7 @@
         <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
-                    <Image Source="MOB_Logo_2021_Test3.png" VerticalOptions="Center" HeightRequest="250" />
+                    <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}" VerticalOptions="Center" HeightRequest="250" />
                 </ContentView>
             </StackLayout>
         </StackLayout>
@@ -37,26 +37,18 @@
             <Button     Margin="0" 
                             Text="What is Mōb?"
                             FontFamily="ProstoOne"
-                            BackgroundColor="#b3b3b3"
-                            TextColor="#4d4d4d" 
                             Clicked="About_Clicked"/>
             <Button     Margin="0" 
                             Text="Mōb Library"
                             FontFamily="ProstoOne"
-                            Clicked="MobLibrary_Clicked"
-                            BackgroundColor="#b3b3b3"
-                            TextColor="White" />
+                            Clicked="MobLibrary_Clicked"/>
             <Button     Margin="0" 
                             Text="Daily Dose"
                             FontFamily="ProstoOne"
-                            Clicked="DailyDose_Clicked"
-                            BackgroundColor="#b3b3b3"
-                            TextColor="#4d4d4d" />
+                            Clicked="DailyDose_Clicked"/>
                 <Button     Margin="0" Text="Settings (become a cog)"
                             Clicked="Settings_Clicked"
-                            FontFamily="ProstoOne"
-                            BackgroundColor="#b3b3b3"
-                            TextColor="White" />
+                            FontFamily="ProstoOne" />
             </StackLayout>
         
 

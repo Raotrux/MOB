@@ -12,16 +12,26 @@
 
     <Shell.Resources>
         <ResourceDictionary>
+            <!-- These colors are for the App Shell (App Shell is the framework/skeleton of the app
+            You'll see these elements typically in the Hamburger menu (FlyoutDisplay) 
+            or the bottom/top bars (TabBar,Tabs,TabbedPages,Back Arrow) -->
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="#4d4d4d" />
-                <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="White" />
-                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Dark={StaticResource BackgroundColorDark}, 
+                        Light={StaticResource BackgroundColorLight}}" />
+                <Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Dark={StaticResource PrimaryTextDark}, 
+                        Light={StaticResource PrimaryTextLight}}" />
+                <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Dark={StaticResource PrimaryTextDark}, 
+                        Light={StaticResource PrimaryTextLight}}" />
+                <Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Dark={StaticResource ButtonBackgroundDisabledColorDark}, 
+                        Light={StaticResource ButtonBackgroundDisabledColorLight}}" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Dark={StaticResource BackgroundColorDark}, 
+                        Light={StaticResource BackgroundColorLight}}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Dark={StaticResource PrimaryTextDark}, 
+                        Light={StaticResource PrimaryTextLight}}" />
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Dark={StaticResource PrimaryTextDark}, 
+                        Light={StaticResource PrimaryTextLight}}"/>
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
@@ -31,10 +41,12 @@
             https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyoutitem-and-menuitem-style-classes
             -->
             <Style Class="FlyoutItemLabelStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource PrimaryTextDark}, 
+                        Light={StaticResource PrimaryTextLight}}"></Setter>
             </Style>
             <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
-                <Setter Property="BackgroundColor" Value="LightBlue"></Setter>
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource BackgroundColorDark}, 
+                        Light={StaticResource BackgroundColorLight}}"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
@@ -74,6 +86,48 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+            
+            <!-- This is where you set the color for each target. 
+            These "StaticResources" are referencing the Colors around lines ~10-40 in App.xaml. 
+            Must set a color for each theme. -->
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor"
+                     Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+            <Style TargetType="Grid">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+            <Style TargetType="StackLayout">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+            <Style TargetType="ListView">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource PrimaryBackgroundDark}, 
+                        Light={StaticResource PrimaryBackgroundLight}}" />
+            </Style>
+            <Style TargetType="Frame">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource BackgroundColorDark}, 
+                        Light={StaticResource BackgroundColorLight}}" />
+                <Setter Property="OutlineColor"
+                    Value="{AppThemeBinding Dark={StaticResource FrameColorDark}, 
+                        Light={StaticResource FrameColorLight}}" />
+            </Style>
+            <Style TargetType="ScrollView">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource BackgroundColorDark}, 
+                        Light={StaticResource BackgroundColorLight}}" />
+            </Style>
+            <Style TargetType="BoxView">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource FrameColorDark}, 
+                        Light={StaticResource FrameColorLight}}" />
+            </Style>
         </ResourceDictionary>
     </Shell.Resources>
 
@@ -100,6 +154,14 @@
     </FlyoutItem>
 -->
 
+    
+    
+    <!-- While I have set stuff here, I don't quite understand what it's doing. Changing stuff doesn't give me the expected results. 
+    As of writing this comment (5/25/2021), navigation is working as intended so I'm just ignoring this for now.
+    This is the content that populates the FlyoutDisplay,TabBar,Tabs. 
+    Adding a ShellContent into the outer TabBar makes an entry into the FlyoutDisplay or TabBar. 
+    Adding multiple ShellContents inside a single Tab causes those to become tabs.
+    -->
     <TabBar>
         <ShellContent Title="Home" Icon="MOB_Logo_2021_Test3.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
         <ShellContent Title="What is Mob?" Icon="MOB_Logo_2021_Test3.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
