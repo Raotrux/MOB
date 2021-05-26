@@ -15,7 +15,7 @@ using Android.Content;
 namespace Mob.Droid
 {
 
-    [Activity(Theme = "@style/MainTheme.Splash", MainLauncher = true, NoHistory = true)]
+    [Activity(Label = "Mо̄b", Theme = "@style/MainTheme.Splash", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         static readonly string TAG = "X:" + typeof(SplashActivity).Name;
