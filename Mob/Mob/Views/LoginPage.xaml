@@ -1,0 +1,24 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mob.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ImageButton Source="MOB_Logo_2021_Test3.png" VerticalOptions="Start" HorizontalOptions="Center" Clicked="OnLoginClicked" />
+
+        <StackLayout Grid.Row="1" Padding="110,0,110,0" VerticalOptions="Center">
+            <Button VerticalOptions="Center" Text="Continue with Google" Clicked="InitOAuth" BackgroundColor="#b3b3b3"/>
+            <Button VerticalOptions="Center" Text="Continue with Facebook" Clicked="OnLoginClicked" BackgroundColor="#b3b3b3"/>
+            <Button VerticalOptions="Center" Text="Continue with Twitter" Clicked="OnLoginClicked" BackgroundColor="#b3b3b3"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,68 @@
+﻿<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mob.App">
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- These are colors I've added -->
+            <!-- Light Theme -->
+            <Color x:Key="ButtonBackgroundColorLight">#b3b3b3</Color>
+            <Color x:Key="ButtonTextColorLight">#ffffff</Color>
+            <Color x:Key="FrameColorLight">#b3b3b3</Color>
+            <Color x:Key="BackgroundColorLight">#e6e6e6</Color>
+            
+            <Color x:Key="TabBarBackgroundColorLight">#e6e6e6</Color>
+            <Color x:Key="TextColorLight">#4d4d4d</Color>
+            <Color x:Key="HeaderBarBackgroundColorLight">#e6e6e6</Color>
+            <Color x:Key="HeaderBarTextColorLight">#b3b3b3</Color>
+            <Color x:Key="ButtonBackgroundDisabledColorLight">#efd792</Color>
+            <Color x:Key="AccentColorLight">#f2be1a</Color>
+            <Color x:Key="PrimaryBackgroundLight">#e6e6e6</Color>
+            <Color x:Key="PrimaryTextLight">#4d4d4d</Color>
+
+            <!-- Dark Theme -->
+            <Color x:Key="ButtonBackgroundColorDark">#b3b3b3</Color>
+            <Color x:Key="ButtonTextColorDark">#e6e6e6</Color>
+            <Color x:Key="FrameColorDark">#e6e6e6</Color>
+            <Color x:Key="BackgroundColorDark">#4d4d4d</Color>
+
+            <Color x:Key="TabBarBackgroundColorDark">#4d4d4d</Color>
+            <Color x:Key="HeaderBarBackgroundColorDark">#4d4d4d</Color>
+            <Color x:Key="TextColorDark">#e6e6e6</Color>
+            <Color x:Key="HeaderBarTextColorDark">#e6e6e6</Color>
+            <Color x:Key="AccentColorDark">#f2be1a</Color>
+            <Color x:Key="ButtonBackgroundDisabledColorDark">#efd792</Color>
+            <Color x:Key="PrimaryBackgroundDark">#4d4d4d</Color>
+            <Color x:Key="PrimaryTextDark">#e6e6e6</Color>
+            
+            <Style TargetType="Button">
+                <Setter Property="TextColor" 
+            Value="{AppThemeBinding Dark={StaticResource ButtonTextColorDark}, 
+                        Light={StaticResource ButtonTextColorLight}}" />
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" 
+                                Value="{AppThemeBinding Dark={StaticResource ButtonBackgroundColorDark}, 
+                        Light={StaticResource ButtonBackgroundColorLight}}"  />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Disabled">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" 
+                                Value="{AppThemeBinding Dark={StaticResource ButtonBackgroundDisabledColorDark}, 
+                        Light={StaticResource ButtonBackgroundDisabledColorLight}}"  />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+        </ResourceDictionary>        
+    </Application.Resources>
+</Application>
