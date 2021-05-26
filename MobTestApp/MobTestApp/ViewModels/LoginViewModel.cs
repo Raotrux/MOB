@@ -12,7 +12,7 @@ namespace MobTestApp.ViewModels
 
         public LoginViewModel()
         {
-            LoginCommand = new Command(OnLoginClicked);
+            LoginCommand = new Command(OnLoginClicked);     //insert the beginning of the OAuth flow here.
         }
 
         private async void OnLoginClicked(object obj)
