@@ -1,13 +1,10 @@
 ﻿using System;
-
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Xamarin_GoogleAuth.Authentication;
-using Xamarin_GooogleAuth.Services;
 
 namespace MobTestApp.Droid
 {
