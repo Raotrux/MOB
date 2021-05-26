@@ -13,12 +13,12 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <ImageButton Source="MOB_Logo_2021_Test3.png" VerticalOptions="Start" HorizontalOptions="Center" Command="{Binding LoginCommand}" />
+        <ImageButton Source="MOB_Logo_2021_Test3.png" VerticalOptions="Start" HorizontalOptions="Center" Clicked="OnLoginClicked" />
 
         <StackLayout Grid.Row="1" Padding="110,0,110,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Continue with Google" Command="{Binding ClickInit}" BackgroundColor="#b3b3b3"/>
-            <Button VerticalOptions="Center" Text="Continue with Facebook" Command="{Binding LoginCommand}" BackgroundColor="#b3b3b3"/>
-            <Button VerticalOptions="Center" Text="Continue with Twitter" Command="{Binding LoginCommand}" BackgroundColor="#b3b3b3"/>
+            <Button VerticalOptions="Center" Text="Continue with Google" Clicked="InitOAuth" BackgroundColor="#b3b3b3"/>
+            <Button VerticalOptions="Center" Text="Continue with Facebook" Clicked="OnLoginClicked" BackgroundColor="#b3b3b3"/>
+            <Button VerticalOptions="Center" Text="Continue with Twitter" Clicked="OnLoginClicked" BackgroundColor="#b3b3b3"/>
         </StackLayout>
     </Grid>
 </ContentPage>

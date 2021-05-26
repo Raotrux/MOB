@@ -17,5 +17,16 @@ namespace MobTestApp.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
         }
+
+        private async void OnLoginClicked(object sender, EventArgs e)
+        {
+            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
+            await Shell.Current.Navigation.PushAsync(new HomePage());
+        }
+
+        private async void InitOAuth(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushAsync(new WebRedirectPage());
+        }
     }
 }
