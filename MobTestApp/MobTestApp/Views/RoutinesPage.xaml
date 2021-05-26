@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobTestApp.Views.SettingsPage"
+             x:Class="MobTestApp.Views.RoutinesPage"
              xmlns:vm="clr-namespace:MobTestApp.ViewModels"
              Title="{Binding Title}"
              Shell.TabBarIsVisible="False">
 
     <ContentPage.BindingContext>
-        <vm:SettingsViewModel />
+        <vm:RoutinesViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.Resources>
@@ -30,19 +30,28 @@
             <StackLayout Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                     <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
-                        <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}" VerticalOptions="Center" HeightRequest="250" />
+                        <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}" VerticalOptions="Center" HeightRequest="100" />
                     </ContentView>
                 </StackLayout>
             </StackLayout>
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label x:Name="appTheme" HorizontalOptions="Center" BackgroundColor="HotPink"></Label>
                 <Button     Margin="100,0,100,0" 
-                        Text="Premium"
-                        Clicked="ChangeTheme_Clicked"
-                            BackgroundColor="{AppThemeBinding Light={StaticResource ButtonBackgroundColorLight}, Dark={StaticResource ButtonBackgroundColorDark}}"
-                            TextColor="{AppThemeBinding Light={StaticResource ButtonTextColorLight}, Dark={StaticResource ButtonTextColorDark}}"
-                            />
+                        Text="1min CheckIn"
+                        BackgroundColor="#b3b3b3"
+                        TextColor="White" 
+                        Clicked="CheckIn_Clicked"/>
+                <Button     Margin="100,0,100,0" 
+                        Text="3min Mob"
+                        Clicked="ThreeMinMob_Clicked"
+                        BackgroundColor="#b3b3b3"
+                        TextColor="White" />
+                <Button     Margin="100,0,100,0" 
+                        Text="ListView Page"
+                        Clicked="ListView_Clicked"
+                        BackgroundColor="#b3b3b3"
+                        TextColor="White" />
             </StackLayout>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>

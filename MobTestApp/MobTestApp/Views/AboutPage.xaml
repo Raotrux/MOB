@@ -1,8 +1,11 @@
-﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobTestApp.Views.AboutPage"
-             xmlns:vm="clr-namespace:MobTestApp.ViewModels"
-             Title="{Binding Title}">
+             xmlns:vm="clr-namespace:MobTestApp.ViewModels" 
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Title="{Binding Title}"
+             Shell.TabBarIsVisible="False">
     
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
@@ -10,47 +13,34 @@
     
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="Accent">#f2be1a</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid>
+    <Grid Margin="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <Label Text="Pulling from a local file" />
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
-                    <Image Source="humanfirst.png" VerticalOptions="Center" HeightRequest="100" />
-                </ContentView>
-            </StackLayout>
-        </StackLayout>
-        <StackLayout Grid.Row="1" BackgroundColor="Green" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <Label Text="Pulling from a website" />
-            <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
-                <Image Source="https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_1280.jpg" VerticalOptions="Center" WidthRequest="220" />
-            </ContentView>
-        </StackLayout>
-        <ScrollView Grid.Row="2">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Start developing now" FontSize="Title"/>
-                <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
-                <Label FontSize="16" Padding="0,24,0,0">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="Learn more at "/>
-                                <Span Text="https://www.github.com" FontAttributes="Bold"/>
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Button Margin="0,10,0,0" Text="Learn more"
-                        Command="{Binding OpenWebCommand}"
-                        BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
+        <Frame Grid.Row="0" CornerRadius="5" HasShadow="True" Margin="5,5,5,5" Padding="0,0,0,0" >
+            <!-- Set ShowPlaybackControls="False" and use the Play(), Pause() and Stop() methods to control playback with your own buttons. -->
+            <xct:MediaElement x:Name="videoSource" ShowsPlaybackControls="True" AutoPlay="False" HeightRequest="215"/>
+        </Frame>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout  Orientation="Vertical" Padding="5,5,5,5" Spacing="10">
+                <Frame CornerRadius="5" HasShadow="True" Grid.RowSpan="1" Margin="0,0,0,0" >
+                    <StackLayout>
+                        <BoxView HeightRequest="2" HorizontalOptions="Fill" />
+                        <Label Text="What is Mob?" FontSize="Title" FontFamily="ProstoOne" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="- Accessible to everyone, not just athletes or people that have experience with movement" FontFamily="ProstoOne" FontSize="16" Padding="0,0,0,0"/>
+                        <Label Text="- Not about being flexible, it's about rewiring/creating positive movement patterns" FontFamily="ProstoOne" FontSize="16" Padding="0,0,0,0"/>
+                        <Label Text="- Routines that are short, memorable, require no equipment at all, they're safe, and most importantly they are highly effective." FontFamily="ProstoOne" FontSize="16" Padding="0,0,0,0"/>
+                        <BoxView HeightRequest="2" HorizontalOptions="Fill" />
+                        <Label Text="Mission Statement" FontSize="Title" FontAttributes="Bold" FontFamily="ProstoOne" HorizontalOptions="Center" />
+                        <Label Text="MŌB's Mission is to improve human performance and health by reducing and preventing common myofascial issues with quality packaged exercise routines that are easy to learn, easy to perform, and highly effective in their outcomes." FontFamily="ProstoOne" FontSize="16" Padding="0,0,0,0"/>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
         </ScrollView>
     </Grid>

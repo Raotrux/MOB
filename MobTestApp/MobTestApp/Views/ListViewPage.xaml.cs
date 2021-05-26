@@ -14,22 +14,26 @@ using YoutubeExplode.Common;
 namespace MobTestApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DailyDosePage : ContentPage
+    public partial class ListViewPage : ContentPage
     {
         public ObservableCollection<Item> Items { get; set; }
         public string VideoId { get; set; }
         public string VideoTitle { get; set; }
         public string VideoDescription { get; set; }
-        public DailyDosePage()
+
+        public ListViewPage()
         {
             InitializeComponent();
             BindingContext = this;
+
             CreateVideosFromPlaylist();
+            
         }
+
         private async void CreateVideosFromPlaylist()
         {
             var youtube = new YoutubeClient();
-            string playlistId = "PLYu7z3I8tdEnTQMXpP6gYN9DVm_DjXza9";
+            string playlistId = "FLFwMITSkc1Fms6PoJoh1OUQ";
 
             var videos = await youtube.Playlists.GetVideosAsync(playlistId);
 
@@ -49,7 +53,7 @@ namespace MobTestApp.Views
                     Items.Add(new Item() { Id = VideoId, Title = VideoTitle, Thumbnail = thumbnail, Description = VideoDescription });
                 }
             };
-            DailyDoseVideos.ItemsSource = Items;
+            MyListView.ItemsSource = Items;
         }
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)

@@ -12,19 +12,24 @@ using YoutubeExplode.Videos.Streams;
 namespace MobTestApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AboutPage : ContentPage
+    public partial class VideoPage : ContentPage
     {
-        public AboutPage()
+        public string VideoTitle { get; set; }
+        public string VideoId { get; set; }
+        public string VideoDescription { get; set; }
+
+        public VideoPage(string videoId, string videoTitle, string videoDescription)
         {
             InitializeComponent();
+            VideoId = videoId;
+            VideoTitle = videoTitle;
+            VideoDescription = videoDescription;
             GetVideoContent();
         }
-
         private async void GetVideoContent()
         {
             var youtube = new YoutubeClient();
-            string videoId = "F13du3MHfJY";
-            var videoURL = $"https://www.youtube.com/watch?v={videoId}";
+            var videoURL = $"https://www.youtube.com/watch?v={VideoId}";
             var video = await youtube.Videos.GetAsync(videoURL);
 
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync(videoURL);
@@ -37,7 +42,26 @@ namespace MobTestApp.Views
 
                 // Then use it with MediaElement
                 videoSource.Source = streamInfo.Url;
+                videoTitle.Text = VideoTitle;
+                videoDescription.Text = VideoDescription;
             }
         }
     }
 }
+
+/*
+private async void GetVideo()
+        {
+            var youtube = new YoutubeClient();
+
+            var streamManifest = await youtube.Videos.Streams.GetManifestAsync(VideoId);
+
+            string thumbnail = "https://img.youtube.com/vi/" + VideoId + "/0.jpg";
+            
+            var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
+
+            mediaElement.Source = streamInfo;
+        }
+    }
+}
+*/

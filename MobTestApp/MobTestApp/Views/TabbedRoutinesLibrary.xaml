@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobTestApp.Views.TabbedRoutinesLibrary"
+             xmlns:pages="clr-namespace:MobTestApp.Views"
+             Shell.TabBarIsVisible="False"
+             BarBackgroundColor="{AppThemeBinding Dark={StaticResource ButtonBackgroundColorDark}, 
+                        Light={StaticResource ButtonBackgroundColorLight}}">
+  <!--Pages can be added as references or inline-->
+  <pages:RoutinesPage />
+  <pages:MobLibraryPage />
+</TabbedPage>

@@ -12,27 +12,25 @@ namespace MobTestApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SettingsPage : ContentPage
     {
+        OSAppTheme currentTheme = Application.Current.RequestedTheme;
         public SettingsPage()
         {
             InitializeComponent();
+            appTheme.Text = currentTheme.ToString();
         }
 
-        private async void ApplicationPage_Clicked(object sender, EventArgs e)
-        {
-            await Shell.Current.Navigation.PushAsync(new ApplicationPage());
-        }
 
-        private async void ProfilePage_Clicked(object sender, EventArgs e)
+        private void ChangeTheme_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.Navigation.PushAsync(new ProfilePage());
-        }
-        private async void BillingPage_Clicked(object sender, EventArgs e)
-        {
-            await Shell.Current.Navigation.PushAsync(new BillingPage());
-        }
-        private async void PremiumPage_Clicked(object sender, EventArgs e)
-        {
-            await Shell.Current.Navigation.PushAsync(new PremiumPage());
+            if (currentTheme.ToString() == "Light")
+            {
+                Application.Current.UserAppTheme = OSAppTheme.Dark;
+            }
+
+            if (currentTheme.ToString() == "Dark")
+            {
+                Application.Current.UserAppTheme = OSAppTheme.Dark;
+            }
         }
     }
 }
