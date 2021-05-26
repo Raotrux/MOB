@@ -29,9 +29,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Views\OAuthRedirectPage.xaml.cs">
-      <DependentUpon>OAuthRedirectPage.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Views\DisplayVideoPage.xaml.cs">
       <DependentUpon>DisplayVideoPage.xaml</DependentUpon>
     </Compile>
@@ -112,6 +109,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\VideoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\WebRedirectPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

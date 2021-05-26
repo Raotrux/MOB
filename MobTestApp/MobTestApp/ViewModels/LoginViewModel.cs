@@ -26,7 +26,7 @@ namespace MobTestApp.ViewModels
 
         private async void InitOAuth(object obj)
         {
-            await Shell.Current.GoToAsync($"//{nameof(OAuthRedirect)}");
+            await Shell.Current.GoToAsync($"//{nameof(WebRedirectPage)}");
         }
     }
 }
