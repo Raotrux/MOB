@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Auth;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -14,37 +11,27 @@ namespace MobTestApp.Views
     public partial class WebRedirectPage : ContentPage
     {
         int AUTH_TYPE;
+        bool AUTHORIZED = false;
+        string redirect = "https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=https%3A%2F%2Fdevelopers.google.com%2Foauthplayground&prompt=consent&response_type=code&client_id=407408718192.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&access_type=offline";
         public WebRedirectPage(int authType)
         {
             InitializeComponent();
             BindingContext = this;
             AUTH_TYPE = authType;
-            OAuth_Google();
+            //if (AUTHORIZED) { Shell.Current.Navigation.PushAsync(new HomePage()); };
         }
 
         public OAuth2Authenticator Authenticator { get; private set; }
 
-        protected async void OAuth_Google()
+        private async void OAuth_Google()
         {
             if (AUTH_TYPE == 1)
             {
-                
-                
-                Authenticator = new Xamarin.Auth.OAuth2Authenticator
-                    (
-                        clientId:
+               new Xamarin.Auth.OAuth2Authenticator(
+                   clientId:
                             new Func<string>
-                               (
-                                   () =>
-                                   {
-                                       string retval_client_id = "oops something is wrong!";
-
-                                    // some people are sending the same AppID for google and other providers
-                                    // not sure, but google (and others) might check AppID for Native/Installed apps
-                                    // Android and iOS against UserAgent in request from 
-                                    // CustomTabs and SFSafariViewContorller
-                                    // TODO: send deliberately wrong AppID and note behaviour for the future
-                                    // fitbit does not care - server side setup is quite liberal
+                               (() =>
+                                   { string retval_client_id = "oops something is wrong!";
                                     switch (Xamarin.Forms.Device.RuntimePlatform)
                                        {
                                            case "Android":
@@ -57,8 +44,8 @@ namespace MobTestApp.Views
                                        return retval_client_id;
                                    }
                               ).Invoke(),
-                       clientSecret: null,   // null or ""
-                       authorizeUrl: new Uri("https://accounts.google.com/o/oauth2/auth"),
+                       clientSecret: null,
+                       authorizeUrl: new Uri("https://accounts.google.com/o/oauth2/v2/auth"),
                        accessTokenUrl: new Uri("https://www.googleapis.com/oauth2/v4/token"),
                        redirectUrl:
                            new Func<Uri>
@@ -67,14 +54,7 @@ namespace MobTestApp.Views
                                    {
 
                                        string uri = null;
-
-                                    // some people are sending the same AppID for google and other providers
-                                    // not sure, but google (and others) might check AppID for Native/Installed apps
-                                    // Android and iOS against UserAgent in request from 
-                                    // CustomTabs and SFSafariViewContorller
-                                    // TODO: send deliberately wrong AppID and note behaviour for the future
-                                    // fitbit does not care - server side setup is quite liberal
-                                    switch (Xamarin.Forms.Device.RuntimePlatform)
+                                       switch (Device.RuntimePlatform)
                                        {
                                            case "Android":
                                                uri =
@@ -88,16 +68,12 @@ namespace MobTestApp.Views
                                                    //"com.googleusercontent.apps.1093596514437-cajdhnien8cpenof8rrdlphdrboo56jh:/oauth2redirect"
                                                    ;
                                                break;
- 
-                                       }
 
+                                       }
                                        return new Uri(uri);
                                    }
                                 ).Invoke(),
-                        scope:
-                                     //"profile"
-                                     "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.login"
-                                     ,
+                        scope: "https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile&access_type=offline",
                         getUsernameAsync: null
                     )
                 {
@@ -146,9 +122,7 @@ namespace MobTestApp.Views
                 // after initialization (creation and event subscribing) exposing local object 
                 AuthenticationState.Authenticator = Authenticator;
 
-                await Browser.OpenAsync(Authenticator.AuthorizeUrl, BrowserLaunchMode.SystemPreferred);
-                //await Shell.Current.Navigation.PushAsync(new HomePage(Authenticator));
-
+                await Browser.OpenAsync(redirect, BrowserLaunchMode.SystemPreferred);
                 return;
             }
         }
