@@ -37,7 +37,7 @@
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Label x:Name="appTheme" HorizontalOptions="Center" BackgroundColor="HotPink"></Label>
                 <Button     Margin="100,0,100,0" 
-                        Text="Premium"
+                        Text="Change Theme (button isnt working properly)"
                         Clicked="ChangeTheme_Clicked"
                             BackgroundColor="{AppThemeBinding Light={StaticResource ButtonBackgroundColorLight}, Dark={StaticResource ButtonBackgroundColorDark}}"
                             TextColor="{AppThemeBinding Light={StaticResource ButtonTextColorLight}, Dark={StaticResource ButtonTextColorDark}}"
