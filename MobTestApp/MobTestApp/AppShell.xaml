@@ -162,7 +162,7 @@
     Adding a ShellContent into the outer TabBar makes an entry into the FlyoutDisplay or TabBar. 
     Adding multiple ShellContents inside a single Tab causes those to become tabs.
     -->
-    <TabBar>
+    <FlyoutItem>
         <ShellContent Title="Home" Icon="MOB_Logo_2021_Test3.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
         <ShellContent Title="What is Mob?" Icon="MOB_Logo_2021_Test3.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
         <Tab Title="Routines" Icon="MOB_Logo_2021_Test3.png" Route="RoutinesPage">
@@ -175,7 +175,7 @@
             <ShellContent Title="Mob Market" Icon="MOB_Logo_2021_Test3.png" Route="MobMarketPage" ContentTemplate="{DataTemplate local:MobMarketPage}" />
         </Tab>
         <ShellContent Title="Settings" Icon="MOB_Logo_2021_Test3.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}" />
-    </TabBar>
+    </FlyoutItem>
     
     
 
@@ -196,7 +196,6 @@
     <TabBar>
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </TabBar>
-
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.
 
