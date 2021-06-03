@@ -18,12 +18,12 @@ namespace Mob.Views
         public string VideoId { get; set; }
         public string VideoDescription { get; set; }
 
-        public VideoPage(string videoId, string videoTitle, string videoDescription)
+        public VideoPage(string videoId, string videoTitle, string testDescription)
         {
             InitializeComponent();
             VideoId = videoId;
             VideoTitle = videoTitle;
-            VideoDescription = videoDescription;
+            VideoDescription = "";
             GetVideoContent();
         }
         private async void GetVideoContent()
@@ -32,6 +32,7 @@ namespace Mob.Views
             var videoURL = $"https://www.youtube.com/watch?v={VideoId}";
             var video = await youtube.Videos.GetAsync(videoURL);
             var duration = video.Duration;
+            VideoDescription = video.Description;
 
             var keywordData = video.Keywords;
             List<string> keywordList = new List<string>();
