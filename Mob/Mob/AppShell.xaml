@@ -171,8 +171,6 @@
             <ShellContent Title="10min Daily Dose" Icon="MOB_Logo_2021_Test3.png" Route="DailyDosePage" ContentTemplate="{DataTemplate local:DailyDosePage}" />
         </Tab>
         <Tab Title="Mob Library" Icon="MOB_Logo_2021_Test3.png" Route="MobLibraryPage">
-            <ShellContent Title="Singles" Icon="MOB_Logo_2021_Test3.png" Route="SinglesPage" ContentTemplate="{DataTemplate local:SinglesPage}" />
-            <ShellContent Title="Mob Market" Icon="MOB_Logo_2021_Test3.png" Route="MobMarketPage" ContentTemplate="{DataTemplate local:MobMarketPage}" />
         </Tab>
         <ShellContent Title="Settings" Icon="MOB_Logo_2021_Test3.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}" />
     </FlyoutItem>
