@@ -10,65 +10,37 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using YoutubeExplode;
 using YoutubeExplode.Common;
+using YoutubeExplode.Videos.Streams;
 
 namespace Mob.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DailyDosePage : ContentPage
     {
-        public ObservableCollection<Item> Items { get; set; }
-        public string VideoId { get; set; }
-        public string VideoTitle { get; set; }
-        public string VideoDescription { get; set; }
         public DailyDosePage()
         {
             InitializeComponent();
-            BindingContext = this;
-            CreateVideosFromPlaylist();
+            GetVideoContent();
         }
-        private async void CreateVideosFromPlaylist()
+
+        private async void GetVideoContent()
         {
             var youtube = new YoutubeClient();
-            string playlistId = "PLu3icofvKrbkL09PrNglroiHHM8k9URj9";
+            string videoId = "F13du3MHfJY";
+            var videoURL = $"https://www.youtube.com/watch?v={videoId}";
+            var video = await youtube.Videos.GetAsync(videoURL);
 
-            var videos = await youtube.Playlists.GetVideosAsync(playlistId);
+            var streamManifest = await youtube.Videos.Streams.GetManifestAsync(videoURL);
+            var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
 
-
-            Items = new ObservableCollection<Item>();
+            if (streamInfo != null)
             {
+                // Get the actual stream
+                // var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
 
-                for (int index = 0; index < videos.Count; index++)
-                {
-                    VideoTitle = videos[index].Title;
-                    VideoId = videos[index].Id;
-                    string url = videos[index].Url;
-                    string thumbnail = "https://img.youtube.com/vi/" + VideoId + "/0.jpg";
-
-                    var video = await youtube.Videos.GetAsync(url);
-                    VideoDescription = "Either I load the actual description and it takes forever, or we figure out an alternative for now";
-
-                    Items.Add(new Item() { Id = VideoId, Title = VideoTitle, Thumbnail = thumbnail, Description = VideoDescription });
-                }
-            };
-            DailyDoseVideos.ItemsSource = Items;
-        }
-
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            if (e.Item == null)
-                return;
-
-            var message = (Item)e.Item;
-            var id = message.Id;
-            var title = message.Title;
-            var description = message.Description;
-
-            await Shell.Current.Navigation.PushAsync(new VideoPage(id, title, description));
-
-            //await DisplayAlert("Item Tapped", "An item was tapped." + test1 + "/" + test2 + "/" + test3, "OK");
-
-            //Deselect Item
-            ((ListView)sender).SelectedItem = null;
+                // Then use it with MediaElement
+                videoSource.Source = streamInfo.Url;
+            }
         }
     }
 }

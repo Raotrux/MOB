@@ -10,64 +10,37 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using YoutubeExplode;
 using YoutubeExplode.Common;
+using YoutubeExplode.Videos.Streams;
 
 namespace Mob.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CheckInPage : ContentPage
     {
-        public ObservableCollection<Item> Items { get; set; }
-        public string VideoId { get; set; }
-        public string VideoTitle { get; set; }
-        public string VideoDescription { get; set; }
         public CheckInPage()
         {
             InitializeComponent();
-            BindingContext = this;
-            CreateVideosFromPlaylist();
+            GetVideoContent();
         }
-        private async void CreateVideosFromPlaylist()
+
+        private async void GetVideoContent()
         {
             var youtube = new YoutubeClient();
-            string playlistId = "PLYu7z3I8tdEno5zUDzlDAT55tITWhGsyC";
+            string videoId = "F13du3MHfJY";
+            var videoURL = $"https://www.youtube.com/watch?v={videoId}";
+            var video = await youtube.Videos.GetAsync(videoURL);
 
-            var videos = await youtube.Playlists.GetVideosAsync(playlistId);
+            var streamManifest = await youtube.Videos.Streams.GetManifestAsync(videoURL);
+            var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
 
-
-            Items = new ObservableCollection<Item>();
+            if (streamInfo != null)
             {
-                for (int index = 0; index < videos.Count; index++)
-                {
-                    VideoTitle = videos[index].Title;
-                    VideoId = videos[index].Id;
-                    string url = videos[index].Url;
-                    string thumbnail = "https://img.youtube.com/vi/" + VideoId + "/0.jpg";
+                // Get the actual stream
+                // var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
 
-                    var video = await youtube.Videos.GetAsync(url);
-                    VideoDescription = video.Description;
-
-                    Items.Add(new Item() { Id = VideoId, Title = VideoTitle, Thumbnail = thumbnail, Description = VideoDescription });
-                }
-            };
-            CheckInVideos.ItemsSource = Items;
-        }
-
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            if (e.Item == null)
-                return;
-
-            var message = (Item)e.Item;
-            var test1 = message.Id;
-            var test2 = message.Title;
-            var test3 = message.Description;
-
-            await Shell.Current.Navigation.PushAsync(new VideoPage(test1, test2, test3));
-
-            //await DisplayAlert("Item Tapped", "An item was tapped." + test1 + "/" + test2 + "/" + test3, "OK");
-
-            //Deselect Item
-            ((ListView)sender).SelectedItem = null;
+                // Then use it with MediaElement
+                videoSource.Source = streamInfo.Url;
+            }
         }
     }
 }
