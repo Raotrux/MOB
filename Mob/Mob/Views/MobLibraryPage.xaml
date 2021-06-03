@@ -7,6 +7,10 @@
              Title="{Binding Title}"
              Shell.TabBarIsVisible="False">
 
+    <ContentPage.BindingContext>
+        <vm:MobLibraryViewModel />
+    </ContentPage.BindingContext>
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">#96d1ff</Color>
