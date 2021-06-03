@@ -31,6 +31,17 @@ namespace Mob.Views
             var youtube = new YoutubeClient();
             var videoURL = $"https://www.youtube.com/watch?v={VideoId}";
             var video = await youtube.Videos.GetAsync(videoURL);
+            var duration = video.Duration;
+
+            var keywordData = video.Keywords;
+            List<string> keywordList = new List<string>();
+            foreach (var word in keywordData)
+            {
+                keywordList.Add(word);
+            }
+            var keywords = string.Join(", ", keywordList.ToArray());
+
+            
 
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync(videoURL);
             var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
@@ -44,6 +55,8 @@ namespace Mob.Views
                 videoSource.Source = streamInfo.Url;
                 videoTitle.Text = VideoTitle;
                 videoDescription.Text = VideoDescription;
+                videoDuration.Text = duration.ToString();
+                videoKeywords.Text = keywords.ToString();
             }
         }
     }
