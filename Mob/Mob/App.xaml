@@ -5,9 +5,34 @@
         Define global resources and styles here, that apply to all pages in your app.
     -->
     <Application.Resources>
+        <StyleSheet Source="/Resources/styles.css" />
         <ResourceDictionary>
-            <!-- These are colors I've added -->
-            <!-- Light Theme -->
+            <!-- MOB Light Pallette-->
+            <Color x:Key="LightWhite">#ffffff</Color>
+            <Color x:Key="LightGold1">#f3c633</Color>
+            <Color x:Key="LightGold2">#f0db9b</Color>
+            <Color x:Key="LightSlate">#5e5e5e</Color>
+            <Color x:Key="LightGrey1">#bababa</Color>
+            <Color x:Key="LightGrey2">#e8e8e8</Color>
+            <!-- MOB Standard Pallette-->
+            <Color x:Key="StdWhite">#f5f5f5</Color>
+            <Color x:Key="StdGold1">#f2be1a</Color>
+            <Color x:Key="StdGold2">#efd792</Color>
+            <Color x:Key="StdSlate">#4d4d4d</Color>
+            <Color x:Key="StdGrey1">#b3b3b3</Color>
+            <Color x:Key="StdGrey2">#e6e6e6</Color>
+            <!-- MOB Dark Pallette -->
+            <Color x:Key="DarkWhite">#e6e6e6</Color>
+            <Color x:Key="DarkGold1">#e6b30d</Color>
+            <Color x:Key="DarkGold2">#e9cb6f</Color>
+            <Color x:Key="DarkSlate">#454545</Color>
+            <Color x:Key="DarkGrey1">#a1a1a1</Color>
+            <Color x:Key="DarkGrey2">#cfcfcf</Color>
+            
+            
+            
+            
+            <!-- Mob Colors-->
             <Color x:Key="ButtonBackgroundColorLight">#b3b3b3</Color>
             <Color x:Key="ButtonTextColorLight">#ffffff</Color>
             <Color x:Key="FrameColorLight">#b3b3b3</Color>
@@ -36,26 +61,31 @@
             <Color x:Key="ButtonBackgroundDisabledColorDark">#efd792</Color>
             <Color x:Key="PrimaryBackgroundDark">#4d4d4d</Color>
             <Color x:Key="PrimaryTextDark">#e6e6e6</Color>
+
+            <!-- Component Styles-->
+            <Style TargetType="Frame">
+                
+            </Style>
             
             <Style TargetType="Button">
                 <Setter Property="TextColor" 
-            Value="{AppThemeBinding Dark={StaticResource ButtonTextColorDark}, 
-                        Light={StaticResource ButtonTextColorLight}}" />
+            Value="{AppThemeBinding Dark={StaticResource StdWhite}, 
+                        Light={StaticResource StdGrey1}}" />
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
                                     <Setter Property="BackgroundColor" 
-                                Value="{AppThemeBinding Dark={StaticResource ButtonBackgroundColorDark}, 
-                        Light={StaticResource ButtonBackgroundColorLight}}"  />
+                                Value="{AppThemeBinding Dark={StaticResource StdSlate}, 
+                        Light={StaticResource StdWhite}}"  />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Disabled">
                                 <VisualState.Setters>
                                     <Setter Property="BackgroundColor" 
-                                Value="{AppThemeBinding Dark={StaticResource ButtonBackgroundDisabledColorDark}, 
-                        Light={StaticResource ButtonBackgroundDisabledColorLight}}"  />
+                                Value="{AppThemeBinding Dark={StaticResource StdGrey2}, 
+                        Light={StaticResource StdGrey1}}"  />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>

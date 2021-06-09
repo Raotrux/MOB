@@ -34,7 +34,7 @@ namespace Mob.Views
 
         private async void About_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.Navigation.PushAsync(new AboutPage());
+            await Shell.Current.Navigation.PushAsync(new uiView());
         }
     }
 }

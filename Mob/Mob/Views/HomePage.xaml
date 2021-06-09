@@ -26,30 +26,52 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
-                    <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}" VerticalOptions="Center" HeightRequest="250" />
+        <StackLayout Grid.Row="0"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="Fill"
+                     >
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="Center" 
+                         VerticalOptions="Center"
+                         >
+                <ContentView Padding="0,20,0,20" 
+                             VerticalOptions="FillAndExpand"
+                             >
+                    <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}" 
+                           VerticalOptions="Center" 
+                           HeightRequest="250" />
                 </ContentView>
             </StackLayout>
         </StackLayout>
 
-        <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Start" Padding="10,0,10,0" Margin="100,0,100,0" Spacing="20" >
-            <Button     Margin="0" 
-                            Text="What is Mōb?"
-                            FontFamily="ProstoOne"
-                            Clicked="About_Clicked"/>
-            <Button     Margin="0" 
-                            Text="Mōb Library"
-                            FontFamily="ProstoOne"
-                            Clicked="MobLibrary_Clicked"/>
-            <Button     Margin="0" 
-                            Text="Daily Dose"
-                            FontFamily="ProstoOne"
-                            Clicked="DailyDose_Clicked"/>
+        <StackLayout Grid.Row="1" 
+                     Orientation="Vertical" 
+                     VerticalOptions="Start" 
+                     Padding="10,0,10,0" 
+                     Margin="100,0,100,0" 
+                     Spacing="20"
+                     >
+            <Button Margin="0"
+                    Text="What is Mōb?"
+                    FontFamily="ProstoOne"
+                    Clicked="About_Clicked"
+                    />
+                <Button Margin="0"
+                    Text="Mōb Library"
+                    FontFamily="ProstoOne"
+                    Clicked="MobLibrary_Clicked"
+                    />
+            <Button Margin="0"
+                    Text="Daily Dose"
+                    FontFamily="ProstoOne"
+                    Clicked="DailyDose_Clicked"
+                    />
         </StackLayout>
         <StackLayout Grid.Row="2">
-            <Image Source="settingscog.png" HorizontalOptions="End" Margin="0,0,10,10" HeightRequest="40">
+            <Image Source="settingscog.png" 
+                   HorizontalOptions="End" 
+                   Margin="0,0,10,10" 
+                   HeightRequest="40">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Settings_Clicked" />
                 </Image.GestureRecognizers>
