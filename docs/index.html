@@ -60,6 +60,21 @@ body, html, h1, h2, h3, h4, h5, h6 {
   background-color: #f2be1a;
   height: 3px;
 }
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
 
 </style>
 <body>
@@ -189,9 +204,11 @@ body, html, h1, h2, h3, h4, h5, h6 {
 
     <div id="DailyDose" class="w3-container routines w3-padding-48 w3-card w3-center">
       <h2 class="w3-center w3-padding">10min Daily Dose</h2>
+      <div class="video-container">
       <iframe width="854" height="480"
           src="https://www.youtube.com/embed/RrtkU7i0qD8">
       </iframe>
+      </div>
       <p>This is where there will be some short of description of the video above. Since some of these videos are locked behind a premium, maybe these could be "trailer" videos about the routine?</p>
     </div>  
   
