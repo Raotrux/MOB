@@ -44,9 +44,20 @@ body, html, h1, h2, h3, h4, h5, h6 {
   background-color: #f2be1a;
 }
 
-.mobnavtext {
-  color: white;
-  font-size: 14px;
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+  @media screen and (min-width: 601px) {
+    .mobnavtext {
+    font-size: 16px;
+    color: white;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .mobnavtext {
+    font-size: 10px;
+    color: white;
+  }
 }
 
 .mobbodytext {
