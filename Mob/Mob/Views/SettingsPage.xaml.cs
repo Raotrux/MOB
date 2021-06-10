@@ -24,7 +24,7 @@ namespace Mob.Views
         {
             if (currentTheme.ToString() == "Light")
             {
-                Application.Current.UserAppTheme = OSAppTheme.Dark;
+                Application.Current.UserAppTheme = OSAppTheme.Light;
             }
 
             if (currentTheme.ToString() == "Dark")

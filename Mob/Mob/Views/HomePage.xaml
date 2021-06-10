@@ -4,56 +4,42 @@
              x:Class="Mob.Views.HomePage"
              xmlns:vm="clr-namespace:Mob.ViewModels"
              Title="{Binding Title}"
-             Shell.TabBarIsVisible="False">
+             Shell.TabBarIsVisible="False"
+             >
 
     <ContentPage.BindingContext>
         <vm:HomeViewModel />
     </ContentPage.BindingContext>
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
-        </ResourceDictionary>
-    </ContentPage.Resources>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-
-        <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
-                    <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}" VerticalOptions="Center" HeightRequest="250" />
-                </ContentView>
-            </StackLayout>
-        </StackLayout>
-
-        <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Start" Padding="10,0,10,0" Margin="100,0,100,0" Spacing="20" >
-            <Button     Margin="0" 
-                            Text="What is Mōb?"
-                            FontFamily="ProstoOne"
-                            Clicked="About_Clicked"/>
-            <Button     Margin="0" 
-                            Text="Mōb Library"
-                            FontFamily="ProstoOne"
-                            Clicked="MobLibrary_Clicked"/>
-            <Button     Margin="0" 
-                            Text="Daily Dose"
-                            FontFamily="ProstoOne"
-                            Clicked="DailyDose_Clicked"/>
-        </StackLayout>
-        <StackLayout Grid.Row="2">
-            <Image Source="settingscog.png" HorizontalOptions="End" Margin="0,0,10,10" HeightRequest="40">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Settings_Clicked" />
-                </Image.GestureRecognizers>
-            </Image>
-        </StackLayout>
-    </Grid>
+    <StackLayout>
+        <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}"
+                   HeightRequest="250"/>
+        <!--↓ Button Shadow ↓-->
+        <Frame>
+            <!--↓ Button ↓-->
+            <Button Clicked="About_Clicked"
+                            Text="What is Mōb?"/>
+        </Frame>
+        <!--↓ Button Shadow ↓-->
+        <Frame>
+            <!--↓ Button ↓-->
+            <Button Clicked="MobLibrary_Clicked"
+                            Text="Mōb Library"/>
+        </Frame>
+        <!--↓ Button Shadow ↓-->
+        <Frame>
+            <!--↓ Button ↓-->
+            <Button Clicked="DailyDose_Clicked"
+                            Text="Mōb Library"/>
+        </Frame>
+        <Image Source="settingscog.png" 
+                           HorizontalOptions="End" 
+                           Margin="0,0,10,10" 
+                           HeightRequest="40">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Settings_Clicked" />
+            </Image.GestureRecognizers>
+        </Image>
+    </StackLayout>
 </ContentPage>

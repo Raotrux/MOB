@@ -12,13 +12,28 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-
-        <ImageButton Source="lightlogo.png" VerticalOptions="Start" HorizontalOptions="Center" Clicked="OnLoginClicked" />
-
-        <StackLayout Grid.Row="1" Padding="110,0,110,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Continue with Google" Clicked="InitOAuth" BackgroundColor="#b3b3b3"/>
-            <Button VerticalOptions="Center" Text="Continue with Facebook" Clicked="OnLoginClicked" BackgroundColor="#b3b3b3"/>
-            <Button VerticalOptions="Center" Text="Continue with Twitter" Clicked="OnLoginClicked" BackgroundColor="#b3b3b3"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ImageButton Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}" 
+                     VerticalOptions="Start" 
+                     HorizontalOptions="Center" 
+                     Clicked="OnLoginClicked" />
+        <StackLayout Grid.Row="1" 
+                     Padding="110,0,110,0" 
+                     VerticalOptions="Center"
+                     BackgroundColor="{AppThemeBinding Light={StaticResource StdWhite}, Dark={StaticResource DarkSlate}}">
+            <Button VerticalOptions="Center" 
+                    Text="Continue with Google" 
+                    Clicked="InitOAuth" 
+                    BackgroundColor="#bababa"/>
+            <Button VerticalOptions="Center" 
+                    Text="Continue with Facebook" 
+                    Clicked="OnLoginClicked" 
+                    BackgroundColor="#b3b3b3"/>
+            <Button VerticalOptions="Center" 
+                    Text="Continue with Twitter" 
+                    Clicked="OnLoginClicked" BackgroundColor="#b3b3b3"/>
         </StackLayout>
     </Grid>
 </ContentPage>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mob.Views.uiView"
+             Visual="Material"
+             Title="{Binding Title}"
+             Shell.TabBarIsVisible="False">
+  <ContentPage.Resources>
+        <ResourceDictionary>
+        </ResourceDictionary>
+  </ContentPage.Resources>
+    <ContentPage.Content>
+        <!--↓ Page ↓-->
+        <Frame>
+            <StackLayout>
+                <!--↓ Light Mode Button Shadow ↓-->
+                <Frame>
+                    <!--↓ Light Mode Button ↓-->
+                    <Button Text="What is Mōb?"
+                            FontFamily="ProstoOne"
+                            Clicked="Clicked"/>
+                </Frame>
+                <!--↓ Dark Mode Button Shadow ↓-->
+                <Frame>
+                    <!--↓ Dark Mode Button ↓-->
+                    <Button Text="What is Mōb?"
+                            FontFamily="ProstoOne"
+                            Clicked="Clicked"/>
+                </Frame>
+        </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
