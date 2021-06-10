@@ -29,7 +29,7 @@ namespace Mob.Views
         private async void CreateVideosFromPlaylist()
         {
             var youtube = new YoutubeClient();
-            string playlistId = "PLu3icofvKrbkL09PrNglroiHHM8k9URj9";
+            string playlistId = "PLu3icofvKrbm3qZ1cUDjWmccoARuj4Iq8";
 
             var videos = await youtube.Playlists.GetVideosAsync(playlistId);
 
