@@ -5,12 +5,13 @@ using Xamarin.Forms;
 
 namespace Mob.ViewModels
 {
-    public class CheckInViewModel : BaseViewModel
+    public class TabbedRoutinesLibraryViewModel : BaseViewModel
     {
-        public CheckInViewModel()
+        public TabbedRoutinesLibraryViewModel()
         {
-            Title = "Check-In";
+            Title = "Mōb Library";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.github.com"));
+
         }
 
         public ICommand OpenWebCommand { get; }
