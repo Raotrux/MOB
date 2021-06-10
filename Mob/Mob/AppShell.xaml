@@ -13,6 +13,24 @@
 
     <Shell.Resources>
         <ResourceDictionary>
+            <!--Gradient Brush-->
+            <LinearGradientBrush
+                x:Key="GradientBrush"
+                StartPoint="0,0"
+                EndPoint="1,1">
+                <GradientStop Color="{AppThemeBinding 
+                              Light={StaticResource DarkGold2},
+                              Dark={StaticResource LightGold2}}" 
+                              Offset="0.65"/>
+                <GradientStop Color="{AppThemeBinding 
+                              Light={StaticResource StdWhite}, 
+                              Dark={StaticResource LightGrey2}}" 
+                              Offset="0.45"/>
+                <GradientStop Color="{AppThemeBinding 
+                              Light={StaticResource LightGrey1}, 
+                              Dark={StaticResource StdSlate}}" 
+                              Offset="0.35"/>
+            </LinearGradientBrush>
             <!-- ↓ Foundational Style ↓-->
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" 
@@ -85,12 +103,16 @@
             </Style>
             <!--↓ Drop Shadow ↓-->
             <Style TargetType="Frame">
-                <Setter Property="BackgroundColor"
-                        Value="{AppThemeBinding 
-                        Light={StaticResource LightGrey2}, 
-                        Dark={StaticResource LightSlate}}" />
+                <Setter Property="Background"
+                        Value="{StaticResource GradientBrush}"/>
                 <Setter Property="HasShadow"
                         Value="False"/>
+                <Setter Property="Margin"
+                        Value="25,10,25,10"/>
+                <Setter Property="Padding"
+                        Value="2"/>
+                <Setter Property="CornerRadius"
+                        Value="7"/>
             </Style>
             <Style TargetType="ScrollView">
                 <Setter Property="BackgroundColor"
@@ -122,8 +144,10 @@
                                 <VisualState.Setters>
                                     <!-- This color changes the background of buttons in the tab menu-->
                                     <Setter Property="BackgroundColor" 
-                                            Value="white" />
-                                    <!-- This color changes the background of the text in the tab menu-->
+                                            Value="{AppThemeBinding 
+                                            Light={StaticResource StdGrey2}, 
+                                            Dark={StaticResource StdSlate}}" />
+                                    <!--This color changes the background of the text in the tab menu-->
                                     <Setter TargetName="FlyoutItemLabel" 
                                             Property="Label.TextColor" 
                                             Value="red" />
@@ -162,18 +186,25 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
- 
+            <!--                               ↓↓ THE DAMN BUTTON IS RIGHT HEREEEEEEE -->
             <Style TargetType="Button">
                 <Setter Property="TextColor" 
-            Value="{StaticResource StdGrey1}" />
-                <Setter Property="FontFamily" Value="ProstoOne"/>
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdSlate}, 
+                        Dark={StaticResource DarkWhite}}" />
+                <Setter Property="FontFamily" 
+                        Value="ProstoOne"/>
+                <Setter Property="CornerRadius"
+                        Value="7"/>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
                                     <Setter Property="BackgroundColor" 
-                                Value="{StaticResource StdWhite}"  />
+                                            Value="{AppThemeBinding 
+                                            Light={StaticResource StdGrey2},
+                                            Dark={StaticResource StdSlate}}"/>
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Disabled">

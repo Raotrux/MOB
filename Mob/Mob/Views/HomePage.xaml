@@ -10,36 +10,36 @@
     <ContentPage.BindingContext>
         <vm:HomeViewModel />
     </ContentPage.BindingContext>
-    <Frame>
-        <StackLayout>
-            <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}"
+
+
+    <StackLayout>
+        <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}"
                    HeightRequest="250"/>
-            <!--↓ Button Shadow ↓-->
-            <Frame>
-                <!--↓ Button ↓-->
-                <Button Clicked="About_Clicked"
+        <!--↓ Button Shadow ↓-->
+        <Frame>
+            <!--↓ Button ↓-->
+            <Button Clicked="About_Clicked"
                             Text="What is Mōb?"/>
-            </Frame>
-            <!--↓ Button Shadow ↓-->
-            <Frame>
-                <!--↓ Button ↓-->
-                <Button Clicked="MobLibrary_Clicked"
+        </Frame>
+        <!--↓ Button Shadow ↓-->
+        <Frame>
+            <!--↓ Button ↓-->
+            <Button Clicked="MobLibrary_Clicked"
                             Text="Mōb Library"/>
-            </Frame>
-            <!--↓ Button Shadow ↓-->
-            <Frame>
-                <!--↓ Button ↓-->
-                <Button Clicked="DailyDose_Clicked"
+        </Frame>
+        <!--↓ Button Shadow ↓-->
+        <Frame>
+            <!--↓ Button ↓-->
+            <Button Clicked="DailyDose_Clicked"
                             Text="Mōb Library"/>
-            </Frame>
-            <Image Source="settingscog.png" 
+        </Frame>
+        <Image Source="settingscog.png" 
                            HorizontalOptions="End" 
                            Margin="0,0,10,10" 
                            HeightRequest="40">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Settings_Clicked" />
-                </Image.GestureRecognizers>
-            </Image>
-        </StackLayout>
-    </Frame>
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Settings_Clicked" />
+            </Image.GestureRecognizers>
+        </Image>
+    </StackLayout>
 </ContentPage>
