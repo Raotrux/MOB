@@ -29,13 +29,14 @@ namespace Mob.Views
         private async void CreateVideosFromPlaylist()
         {
             var youtube = new YoutubeClient();
-            string playlistId = "PLYu7z3I8tdEno5zUDzlDAT55tITWhGsyC";
+            string playlistId = "PLu3icofvKrbm3qZ1cUDjWmccoARuj4Iq8";
 
             var videos = await youtube.Playlists.GetVideosAsync(playlistId);
 
 
             Items = new ObservableCollection<Item>();
             {
+
                 for (int index = 0; index < videos.Count; index++)
                 {
                     VideoTitle = videos[index].Title;
@@ -44,7 +45,7 @@ namespace Mob.Views
                     string thumbnail = "https://img.youtube.com/vi/" + VideoId + "/0.jpg";
 
                     var video = await youtube.Videos.GetAsync(url);
-                    VideoDescription = video.Description;
+                    VideoDescription = "Either I load the actual description and it takes forever, or we figure out an alternative for now";
 
                     Items.Add(new Item() { Id = VideoId, Title = VideoTitle, Thumbnail = thumbnail, Description = VideoDescription });
                 }
@@ -58,11 +59,11 @@ namespace Mob.Views
                 return;
 
             var message = (Item)e.Item;
-            var test1 = message.Id;
-            var test2 = message.Title;
-            var test3 = message.Description;
+            var id = message.Id;
+            var title = message.Title;
+            var description = message.Description;
 
-            await Shell.Current.Navigation.PushAsync(new VideoPage(test1, test2, test3));
+            await Shell.Current.Navigation.PushAsync(new VideoPage(id, title, description));
 
             //await DisplayAlert("Item Tapped", "An item was tapped." + test1 + "/" + test2 + "/" + test3, "OK");
 

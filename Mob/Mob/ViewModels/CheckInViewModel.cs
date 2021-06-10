@@ -9,7 +9,7 @@ namespace Mob.ViewModels
     {
         public CheckInViewModel()
         {
-            Title = "1min Check In";
+            Title = "Check-In";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.github.com"));
         }
 

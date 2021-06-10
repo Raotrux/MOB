@@ -36,11 +36,8 @@
     <Compile Update="Views\DisplayVideoPage.xaml.cs">
       <DependentUpon>DisplayVideoPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\ApplicationPage.xaml.cs">
-      <DependentUpon>ApplicationPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\BillingPage.xaml.cs">
-      <DependentUpon>BillingPage.xaml</DependentUpon>
+    <Compile Update="Views\SinglesPage.xaml.cs">
+      <DependentUpon>SinglesPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\VideoPage.xaml.cs">
       <DependentUpon>VideoPage.xaml</DependentUpon>
@@ -67,16 +64,7 @@
     <EmbeddedResource Update="Views\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ListViewPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MobLibraryPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MobMarketPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MobPlaylistPage.xaml">
+    <EmbeddedResource Update="Views\SinglesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\PremiumPage.xaml">
@@ -94,10 +82,10 @@
     <EmbeddedResource Update="Views\RoutinesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SettingsPage.xaml">
+    <EmbeddedResource Update="Views\Page1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SinglesPage.xaml">
+    <EmbeddedResource Update="Views\SettingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\TabbedRoutinesLibrary.xaml">

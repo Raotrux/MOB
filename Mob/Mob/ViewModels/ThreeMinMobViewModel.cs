@@ -9,7 +9,7 @@ namespace Mob.ViewModels
     {
         public ThreeMinMobViewModel()
         {
-            Title = "Three Min Mob";
+            Title = "3min Mob";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.github.com"));
 
         }

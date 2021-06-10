@@ -6,7 +6,9 @@
              Shell.TabBarIsVisible="False"
              BarBackgroundColor="{AppThemeBinding Dark={StaticResource ButtonBackgroundColorDark}, 
                         Light={StaticResource ButtonBackgroundColorLight}}">
-  <!--Pages can be added as references or inline-->
-  <pages:RoutinesPage />
-  <pages:MobLibraryPage />
+    <!--Pages can be added as references or inline-->
+    <pages:SinglesPage />
+    <pages:CheckInPage />
+    <pages:ThreeMinMobPage />
+    <pages:DailyDosePage />
 </TabbedPage>
