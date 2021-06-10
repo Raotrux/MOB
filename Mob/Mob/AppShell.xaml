@@ -16,63 +16,105 @@
             <!-- ↓ Foundational Style ↓-->
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" 
-                        Value="GreenYellow" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
                 <Setter Property="Shell.ForegroundColor" 
-                        Value="Aquamarine" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
                 <Setter Property="Shell.TitleColor" 
-                        Value="Yellow" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
                 <Setter Property="Shell.DisabledColor" 
-                        Value="Red" />
-                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
+                <Setter Property="Shell.UnselectedColor" 
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
                 <Setter Property="Shell.TabBarBackgroundColor" 
-                        Value="Blue" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
                 <Setter Property="Shell.TabBarForegroundColor" 
-                        Value="Purple" />
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
+                <Setter Property="Shell.TabBarUnselectedColor" 
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}"/>
                 <Setter Property="Shell.TabBarTitleColor" 
-                        Value="ForestGreen"/>
-                <Setter Property="Shell.BackgroundColor" Value="Red"/>
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}"/>
+                <Setter Property="Shell.BackgroundColor" 
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}"/>
             </Style>
             <!--↓ Global Styles by Component ↓-->
             <!--↓ App Theme Switch Snippet ↓-->
-            <!--{AppThemeBinding Light={StaticResource [AssetColor]}, Dark={StaticeResource [AssetColor]}}-->
+            <!--{AppThemeBinding Light={StaticResource [AssetColor]}, Dark={StaticResource [AssetColor]}}-->
             <Style TargetType="ContentPage">
                 <Setter Property="BackgroundColor"
-                        Value="Pink" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
             </Style>
             <Style TargetType="Grid">
                 <Setter Property="BackgroundColor"
-                        Value="DeepPink" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
             </Style>
             <Style TargetType="StackLayout">
                 <Setter Property="BackgroundColor"
-                        Value="Magenta" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
             </Style>
             <Style TargetType="ListView">
                 <Setter Property="BackgroundColor"
-                        Value="DarkSeaGreen" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
             </Style>
+            <!--↓ Drop Shadow ↓-->
             <Style TargetType="Frame">
                 <Setter Property="BackgroundColor"
-                        Value="LawnGreen" />
-                <Setter Property="OutlineColor"
-                        Value="BurlyWood" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource LightGrey2}, 
+                        Dark={StaticResource LightSlate}}" />
+                <Setter Property="HasShadow"
+                        Value="False"/>
             </Style>
             <Style TargetType="ScrollView">
                 <Setter Property="BackgroundColor"
-                        Value="PaleGoldenrod" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
             </Style>
             <Style TargetType="BoxView">
                 <Setter Property="BackgroundColor"
-                        Value="Blue" />
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}" />
             </Style>
-            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}"/>
-            <Style TargetType="FlyoutPage" BasedOn="{StaticResource BaseStyle}"/>
+            <Style TargetType="TabBar" 
+                   BasedOn="{StaticResource BaseStyle}"/>
+            <Style TargetType="FlyoutPage" 
+                   BasedOn="{StaticResource BaseStyle}"/>
             <Style Class="FlyoutItemLayoutStyle" 
                    TargetType="Layout" 
                    ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" 
-                        Value="DarkSlateBlue"></Setter>
+                        Value="{AppThemeBinding 
+                        Light={StaticResource StdGrey2}, 
+                        Dark={StaticResource StdSlate}}"/>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
@@ -84,7 +126,7 @@
                                     <!-- This color changes the background of the text in the tab menu-->
                                     <Setter TargetName="FlyoutItemLabel" 
                                             Property="Label.TextColor" 
-                                            Value="#4d4d4d" />
+                                            Value="red" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Selected">
@@ -124,6 +166,7 @@
             <Style TargetType="Button">
                 <Setter Property="TextColor" 
             Value="{StaticResource StdGrey1}" />
+                <Setter Property="FontFamily" Value="ProstoOne"/>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">

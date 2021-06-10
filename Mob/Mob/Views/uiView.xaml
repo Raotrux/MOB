@@ -11,8 +11,7 @@
   </ContentPage.Resources>
     <ContentPage.Content>
         <!--↓ Page ↓-->
-        <Frame BackgroundColor="{AppThemeBinding Dark={StaticResource StdSlate}, 
-                        Light={StaticResource StdWhite}}">
+        <Frame>
             <StackLayout>
                 <!--↓ Light Mode Button Shadow ↓-->
                 <Frame>

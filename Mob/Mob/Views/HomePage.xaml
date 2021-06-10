@@ -5,46 +5,41 @@
              xmlns:vm="clr-namespace:Mob.ViewModels"
              Title="{Binding Title}"
              Shell.TabBarIsVisible="False"
-             Shell.NavBarIsVisible="False">
+             >
 
     <ContentPage.BindingContext>
         <vm:HomeViewModel />
     </ContentPage.BindingContext>
-
-
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-
-        <StackLayout Grid.Row="0">
-            <StackLayout>
-                <ContentView>
-                    <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}"
-                           MinimumHeightRequest="250"/>
-                </ContentView>
-            </StackLayout>
-        </StackLayout>
-
-        <StackLayout Grid.Row="1">
-            <Button Clicked="About_Clicked"/>
-            <Button Clicked="MobLibrary_Clicked"/>
-            <Button Clicked="DailyDose_Clicked"/>
-        </StackLayout>
-        <StackLayout Grid.Row="2">
+    <Frame>
+        <StackLayout>
+            <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}"
+                   HeightRequest="250"/>
+            <!--↓ Button Shadow ↓-->
+            <Frame>
+                <!--↓ Button ↓-->
+                <Button Clicked="About_Clicked"
+                            Text="What is Mōb?"/>
+            </Frame>
+            <!--↓ Button Shadow ↓-->
+            <Frame>
+                <!--↓ Button ↓-->
+                <Button Clicked="MobLibrary_Clicked"
+                            Text="Mōb Library"/>
+            </Frame>
+            <!--↓ Button Shadow ↓-->
+            <Frame>
+                <!--↓ Button ↓-->
+                <Button Clicked="DailyDose_Clicked"
+                            Text="Mōb Library"/>
+            </Frame>
             <Image Source="settingscog.png" 
-                   HorizontalOptions="End" 
-                   Margin="0,0,10,10" 
-                   HeightRequest="40">
+                           HorizontalOptions="End" 
+                           Margin="0,0,10,10" 
+                           HeightRequest="40">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Settings_Clicked" />
                 </Image.GestureRecognizers>
             </Image>
         </StackLayout>
-    </Grid>
+    </Frame>
 </ContentPage>

@@ -15,7 +15,7 @@
             <Color x:Key="LightGrey1">#bababa</Color>
             <Color x:Key="LightGrey2">#e8e8e8</Color>
             <!--↓ MOB Standard Pallette ↓-->
-            <Color x:Key="StdWhite">#f5f5f5</Color>
+            <Color x:Key="StdWhite">#fff</Color>
             <Color x:Key="StdGold1">#f2be1a</Color>
             <Color x:Key="StdGold2">#efd792</Color>
             <Color x:Key="StdSlate">#4d4d4d</Color>
@@ -29,18 +29,15 @@
             <Color x:Key="DarkGrey1">#a1a1a1</Color>
             <Color x:Key="DarkGrey2">#cfcfcf</Color>
             
-            
-            
-            
             <!-- Mob Colors-->
             <Color x:Key="ButtonBackgroundColorLight">#b3b3b3</Color>
             <Color x:Key="ButtonTextColorLight">#ffffff</Color>
             <Color x:Key="FrameColorLight">#b3b3b3</Color>
             <Color x:Key="BackgroundColorLight">#e6e6e6</Color>
-            
-            <Color x:Key="TabBarBackgroundColorLight">#e6e6e6</Color>
+
+            <Color x:Key="TabBarBackgroundColorLight">#f3c633</Color>
             <Color x:Key="TextColorLight">#4d4d4d</Color>
-            <Color x:Key="HeaderBarBackgroundColorLight">#e6e6e6</Color>   <!-- This-->
+            <Color x:Key="HeaderBarBackgroundColorLight">#f3c633</Color>   <!-- This-->
             <Color x:Key="HeaderBarTextColorLight">#b3b3b3</Color>
             <Color x:Key="ButtonBackgroundDisabledColorLight">#efd792</Color>
             <Color x:Key="AccentColorLight">#f2be1a</Color>
@@ -54,7 +51,7 @@
             <Color x:Key="BackgroundColorDark">#4d4d4d</Color>
 
             <Color x:Key="TabBarBackgroundColorDark">#4d4d4d</Color>
-            <Color x:Key="HeaderBarBackgroundColorDark">#4d4d4d</Color>  <!-- or this-->
+            <Color x:Key="HeaderBarBackgroundColorDark">#f3c633</Color>  <!-- or this-->
             <Color x:Key="TextColorDark">#e6e6e6</Color>
             <Color x:Key="HeaderBarTextColorDark">#e6e6e6</Color>
             <Color x:Key="AccentColorDark">#f2be1a</Color>
