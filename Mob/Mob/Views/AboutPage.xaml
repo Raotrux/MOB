@@ -43,41 +43,24 @@
                        Grid.RowSpan="1" 
                        Margin="0,0,0,0" >
                     <StackLayout>
-                        <BoxView HeightRequest="2" 
-                                 HorizontalOptions="Fill" 
-                                 CornerRadius="14"
-                                 />
-                        <Label Text="What is Mob?" 
+                        <Label Text="What is Mōb?" 
                                FontSize="Title" 
                                FontFamily="ProstoOne" 
                                FontAttributes="Bold" 
                                HorizontalOptions="Center"
+                               TextDecorations="Underline"
                                />
-                        <Label Text="- Accessible to everyone, not just athletes or people that have experience with movement" 
+                        <Label Text="Mōb (short for 'mōbility') is a highly-effective movement system designed by sports chiropractor, Dr. Patrick K. Silva, to restore and enhance functional mobility - no sweat or equipment required. The Mōb system utilizes simple, easy-to-use body hacks to quickly identify and improve common mobility issues. Whether office worker or athlete, Mōb will help you develop a firm understanding of your own musculoskeletal and myofascial health, and give you tools that you will be able to use for the rest of your life." 
                                FontFamily="ProstoOne" 
                                FontSize="16" 
                                Padding="0,0,0,0"
                                />
-                        <Label Text="- Not about being flexible, it's about rewiring/creating positive movement patterns"
+                        <Label Text="Everybody's got something, maybe it's a tight low back, an old shoulder injury, a pinchy hip, tight and restless calves, or a tough time checking our blind spot - none are exempt from our body wanting to tighten up on us. We all live different lives differently - some mostly sit and stare at a screen, some are constantly pushing, pulling, and lifting, and some are always on the go. In either case, our bodies are constantly trying to adapt to our behaviors, our positions, our activities, and our injuries. Inevitably, the more stresses we put our body through, the less functional mobility we end up with - less range of motion in our joints, more compensatory tightness, poor movement quality, usually more discomfort….and the cycle continues from there. Luckily for us, some wonderfully smart doctors, researchers, trainers, and therapists throughout the ages have been keen observers of the human condition, and have come up with some brilliant solutions for these issues."
                                FontFamily="ProstoOne"
                                FontSize="16"
                                Padding="0,0,0,0"
                                />
-                        <Label Text="- Routines that are short, memorable, require no equipment at all, they're safe, and most importantly they are highly effective." 
-                               FontFamily="ProstoOne" 
-                               FontSize="16" 
-                               Padding="0,0,0,0"
-                               />
-                        <BoxView HeightRequest="2" 
-                                 HorizontalOptions="Fill" 
-                                 />
-                        <Label Text="Mission Statement" 
-                               FontSize="Title" 
-                               FontAttributes="Bold" 
-                               FontFamily="ProstoOne" 
-                               HorizontalOptions="Center"
-                               />
-                        <Label Text="MŌB's Mission is to improve human performance and health by reducing and preventing common myofascial issues with quality packaged exercise routines that are easy to learn, easy to perform, and highly effective in their outcomes." 
+                        <Label Text="Mōb is a love letter to those inventive souls, and a summary of their simplest and most effective solutions." 
                                FontFamily="ProstoOne" 
                                FontSize="16" 
                                Padding="0,0,0,0"

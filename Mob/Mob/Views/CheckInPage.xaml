@@ -59,27 +59,27 @@
                         </StackLayout>
                     </xct:Expander.Header>
 
-
-                    <ScrollView Grid.Row="2">
-                        <StackLayout  Orientation="Vertical" Padding="5,5,5,5" Spacing="10">
-                            <Frame CornerRadius="5" HasShadow="True"  Grid.RowSpan="1" Margin="0,0,0,0" >
-                                <StackLayout>
+                    <xct:Expander.Content IsExpanded="True">
+                        <ScrollView Grid.Row="2">
+                            <StackLayout  Orientation="Vertical" Padding="5,5,5,5" Spacing="10">
+                                <Frame CornerRadius="5" HasShadow="True"  Grid.RowSpan="1" Margin="0,0,0,0" >
                                     <StackLayout>
-                                        <Label Text="Keywords:" FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
-                                        
+                                        <StackLayout>
+                                            <Label Text="Keywords:" FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
+                                        </StackLayout>
+                                        <StackLayout>
+                                            <Label Text="Duration:" FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
+                                        </StackLayout>
+                                        <StackLayout>
+                                            <Label Text="Description:" FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
+                                            <Label Text="A myofascial spot check for those on the go! If you find that you can't do these simple movements easily, you may need to put in some focused work!" FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
+                                            <Label Text="No sweat, no equipment necessary." FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
+                                        </StackLayout>
                                     </StackLayout>
-                                    <StackLayout>
-                                        <Label Text="Duration:" FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
-                                     
-                                    </StackLayout>
-                                    <StackLayout>
-                                        <Label Text="Description:" FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
-                                       
-                                    </StackLayout>
-                                </StackLayout>
-                            </Frame>
-                        </StackLayout>
-                    </ScrollView>
+                                </Frame>
+                            </StackLayout>
+                        </ScrollView>
+                    </xct:Expander.Content>
                 </xct:Expander>
             </StackLayout>
         </Grid>

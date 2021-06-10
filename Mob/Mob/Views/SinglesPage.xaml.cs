@@ -43,10 +43,7 @@ namespace Mob.Views
                     VideoId = videos[index].Id;
                     string url = videos[index].Url;
                     string thumbnail = "https://img.youtube.com/vi/" + VideoId + "/0.jpg";
-
-                    var video = await youtube.Videos.GetAsync(url);
                     VideoDescription = "Either I load the actual description and it takes forever, or we figure out an alternative for now";
-
                     Items.Add(new Item() { Id = VideoId, Title = VideoTitle, Thumbnail = thumbnail, Description = VideoDescription });
                 }
             };

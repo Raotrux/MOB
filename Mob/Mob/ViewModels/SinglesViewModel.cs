@@ -10,10 +10,6 @@ namespace Mob.ViewModels
         public SinglesViewModel()
         {
             Title = "Singles";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.github.com"));
-
         }
-
-        public ICommand OpenWebCommand { get; }
     }
 }

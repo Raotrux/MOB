@@ -28,15 +28,15 @@ namespace Mob.Views
             var youtube = new YoutubeClient();
             string videoId = "1Swsp-IoGv0";
             var videoURL = $"https://www.youtube.com/watch?v={videoId}";
-            var video = await youtube.Videos.GetAsync(videoURL);
-
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync(videoURL);
             var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
 
             if (streamInfo != null)
             {
                 // Get the actual stream
-                // var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
+                //var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
+                //videoKeywords.Text = stream.Keywords;
+                // videoDuration.Text = stream.Length;
 
                 // Then use it with MediaElement
                 videoSource.Source = streamInfo.Url;

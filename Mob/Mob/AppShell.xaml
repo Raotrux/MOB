@@ -283,10 +283,6 @@
                           Icon="MOB_Logo_2021_Test3.png" 
                           Route="SinglesPage" 
                           ContentTemplate="{DataTemplate local:SinglesPage}" />
-            <ShellContent Title="Mob Market" 
-                          Icon="MOB_Logo_2021_Test3.png" 
-                          Route="MobMarketPage" 
-                          ContentTemplate="{DataTemplate local:MobMarketPage}" />
         </Tab>
         <ShellContent Title="Settings" 
                       Icon="MOB_Logo_2021_Test3.png" 
