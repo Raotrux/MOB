@@ -74,7 +74,8 @@
                                     </StackLayout>
                                     <StackLayout>
                                         <Label Text="Description:" FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
-
+                                        <Label Text="Find-and-fix some common areas of tightness around the body! This is an abbreviated version of the 10-Min Daily Dose, but certainly no replacement!" FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
+                                        <Label Text="No sweat, no equipment necessary." FontFamily="ProstoOne" FontSize="14" Padding="0,0,0,0"/>
                                     </StackLayout>
                                 </StackLayout>
                             </Frame>
