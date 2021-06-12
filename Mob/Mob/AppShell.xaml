@@ -120,6 +120,10 @@
                         Light={StaticResource StdGrey2}, 
                         Dark={StaticResource StdSlate}}" />
             </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontFamily"
+                        Value="ProstoOne"/>
+            </Style>
             <Style TargetType="BoxView">
                 <Setter Property="BackgroundColor"
                         Value="{AppThemeBinding 

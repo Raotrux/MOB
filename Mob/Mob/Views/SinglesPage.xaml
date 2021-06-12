@@ -5,7 +5,8 @@
              xmlns:vm="clr-namespace:Mob.ViewModels"
              xmlns:behaviors="http://xamarin.com/schemas/2020/toolkit"
              Title="{Binding Title}"
-             Shell.TabBarIsVisible="False">
+             Shell.TabBarIsVisible="False"
+             Shell.NavBarIsVisible="False">
 
     <ContentPage.BindingContext>
         <vm:SinglesViewModel />
