@@ -112,7 +112,7 @@
     <AndroidResource Include="Resources\drawable\expand.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\collapse.png" />
+    <EmbeddedResource Include="Resources\drawable\collapse.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\darklogo.png" />
@@ -121,7 +121,7 @@
     <AndroidResource Include="Resources\drawable\lightlogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\settingscog.png" />
+    <EmbeddedResource Include="Resources\drawable\settingscog.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Xamarin.Auth\" />

@@ -26,15 +26,20 @@ namespace Mob.Views
             string videoId = "9vN_LL98BnU";
             var videoURL = $"https://www.youtube.com/watch?v={videoId}";
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync(videoURL);
-            var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
 
-            if (streamInfo != null)
+            if (streamManifest != null)
             {
-                // Get the actual stream
-                // var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
+                var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
+                if (streamInfo != null)
+                {
+                    // Get the actual stream
+                    //var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
+                    //videoKeywords.Text = stream.Keywords;
+                    // videoDuration.Text = stream.Length;
 
-                // Then use it with MediaElement
-                videoSource.Source = streamInfo.Url;
+                    // Then use it with MediaElement
+                    videoSource.Source = streamInfo.Url;
+                }
             }
         }
     }

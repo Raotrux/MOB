@@ -26,18 +26,21 @@ namespace Mob.Views
         private async void GetVideoContent()
         {
             var youtube = new YoutubeClient();
-            string videoId = "F13du3MHfJY";
+            string videoId = "-9HhnTgAt5g";
             var videoURL = $"https://www.youtube.com/watch?v={videoId}";
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync(videoURL);
-            var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
-
-            if (streamInfo != null)
+        
+            if (streamManifest != null)
             {
-                // Get the actual stream
-                // var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
+                var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
+                if (streamInfo != null)
+                {
+                    // Get the actual stream
+                    // var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
 
-                // Then use it with MediaElement
-                videoSource.Source = streamInfo.Url;
+                    // Then use it with MediaElement
+                    videoSource.Source = streamInfo.Url;
+                }
             }
         }
     }

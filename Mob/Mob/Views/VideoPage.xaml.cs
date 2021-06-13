@@ -45,19 +45,23 @@ namespace Mob.Views
             
 
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync(videoURL);
-            var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
-
-            if (streamInfo != null)
+           
+            if (streamManifest != null)
             {
-                // Get the actual stream
-                // var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
+                var streamInfo = streamManifest.GetMuxedStreams().GetWithHighestVideoQuality();
 
-                // Then use it with MediaElement
-                videoSource.Source = streamInfo.Url;
-                videoTitle.Text = VideoTitle;
-                videoDescription.Text = VideoDescription;
-                videoDuration.Text = duration.ToString();
-                videoKeywords.Text = keywords.ToString();
+                if (streamInfo != null)
+                {
+                    // Get the actual stream
+                    // var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
+
+                    // Then use it with MediaElement
+                    videoSource.Source = streamInfo.Url;
+                    videoTitle.Text = VideoTitle;
+                    videoDescription.Text = VideoDescription;
+                    videoDuration.Text = duration.ToString();
+                    //videoKeywords.Text = keywords.ToString();
+                }
             }
         }
     }

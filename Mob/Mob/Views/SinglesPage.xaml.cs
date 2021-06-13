@@ -41,9 +41,50 @@ namespace Mob.Views
                 {
                     VideoTitle = videos[index].Title;
                     VideoId = videos[index].Id;
-                    string url = videos[index].Url;
                     string thumbnail = "https://img.youtube.com/vi/" + VideoId + "/0.jpg";
-                    VideoDescription = "Either I load the actual description and it takes forever, or we figure out an alternative for now";
+                    
+
+                    //Hamstring PNF
+                    if (VideoId == "1py3xlirciQ")
+                    {
+                        VideoDescription = "Hamstring PNF | 3x10 second holds 1.Begin seated with legs out in front 2.Bring your chest in 3.Reach out your arms 4.Take a big breath 5.Exhale and reach a little farther 6.Slowly tuck your chin towards your chest 7.Begin pressing legs firmly into floor";
+                    }
+                    //Openers & Positional Breath
+                    else if (VideoId == "6B5ysNYiBDE")
+                    {
+                        VideoDescription = "Openers and Positional Breathing are great ways to restore myofascial balance around our body, allowing you to break past stubborn tightness easily with a few simple breaths. Note: 3 Deep Breaths per position 1.Brügger's w/ Belly Breath 2.Brügger's w/ Chest Breath 3.Lateral Rib Excursion 4.Chest Openers 5.Side Openers 6.Cobra w / Belly Breath 7.Posterior Pelvic Tilts w / Belly Breath";
+                    }
+                    //Neck PNF
+                    else if (VideoId == "-GG4Jyo9xgw")
+                    {
+                        VideoDescription = "This is a placeholder description for any video's that arent properly displaying their specific description text.";
+                    }
+                    //Calf PNF
+                    else if (VideoId == "NQsxftizTCQ")
+                    {
+                        VideoDescription = "This is a placeholder description for any video's that arent properly displaying their specific description text.";
+                    }
+                    //Glute PNF
+                    else if (VideoId == "eOfTf5f2lAY")
+                    {
+                        VideoDescription = "This is a placeholder description for any video's that arent properly displaying their specific description text.";
+                    }
+                    //Abductor PNF
+                    else if (VideoId == "XsdyMPX63ps")
+                    {
+                        VideoDescription = "This is a placeholder description for any video's that arent properly displaying their specific description text.";
+                    }
+                    //Quad PNF
+                    else if (VideoId == "PTq06-acwEE")
+                    {
+                        VideoDescription = "This is a placeholder description for any video's that arent properly displaying their specific description text.";
+                    }
+                    //Default description
+                    else
+                    {
+                        VideoDescription = "This is a placeholder description for any video's that arent properly displaying their specific description text.";
+                    }
+
                     Items.Add(new Item() { Id = VideoId, Title = VideoTitle, Thumbnail = thumbnail, Description = VideoDescription });
                 }
             };
