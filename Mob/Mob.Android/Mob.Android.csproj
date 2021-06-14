@@ -129,7 +129,7 @@
     <AndroidResource Include="Resources\drawable\lightlogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\drawable\settingscog.png" />
+    <AndroidResource Include="Resources\drawable\settingscog.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Xamarin.Auth\" />
