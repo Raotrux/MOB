@@ -40,7 +40,7 @@ namespace Mob.Views
 
                     // Then use it with MediaElement
                     videoSource.Source = streamInfo.Url;
-                    videoDescription.Text = "Designed to get your body ready for whatever the day has in store! For an abbreviated version, try the 3-Min Mob as a quick warm-up for cool-down! No sweat, no equipment necessary. Note: Mobilizations during this routine should NOT be painful. Only stretch to tolerance. Your tolerance may vary depending on the state of the tissue. As always, be sure to consult the appropriate member of your healthcare team if you notice pain.";
+                    videoDescription.Text = "Designed to get your body ready for whatever the day has in store! For an abbreviated version, try the 3-Min Mob as a quick warm-up for cool-down! No sweat, no equipment necessary. Note: Mobilizations during this routine should NOT be painful. Only stretch to tolerance. Your tolerance may vary depending on the state of the tissue. As always, be sure to consult the appropriate member of your healthcare team if you notice pain. ";
                 }
             }
         }
